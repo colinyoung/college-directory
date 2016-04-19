@@ -40,7 +40,7 @@ describe DataDotGov do
   end
 
   it 'will raise errors if initialized incorrectly' do
-    client = DataDotGov::Client.new()
+    client = DataDotGov::Client.new
     expect { client.search('asdf') }.to raise_error(ArgumentError)
   end
 

@@ -22,7 +22,6 @@ module DataDotGov
     def search(value, _offset = 0, _limit = @options['limit'])
       preflight!
 
-
       params = {
         q: value,
         resource_id: resource_id
