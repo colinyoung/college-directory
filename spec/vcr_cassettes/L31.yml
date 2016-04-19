@@ -1,0 +1,357 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://inventory.data.gov/api/3/action/datastore_search?q=Child%20Care%20Provider/Assistant&resource_id=6d2a0324-5964-44c3-97be-061c0eb5fcc9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - inventory.data.gov
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 19 Apr 2016 21:20:28 GMT
+      Server:
+      - Apache
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '26097'
+      Content-Type:
+      - application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"help": "https://inventory.data.gov/api/3/action/help_show?name=datastore_search",
+        "success": true, "result": {"resource_id": "6d2a0324-5964-44c3-97be-061c0eb5fcc9",
+        "fields": [{"type": "int4", "id": "_id"}, {"type": "numeric", "id": "UNITID"},
+        {"type": "numeric", "id": "CIPCODE"}, {"type": "text", "id": "PROGRAM_TITLE"},
+        {"type": "numeric", "id": "COMPLETIONS_TOTAL"}, {"type": "text", "id": "DISTANCE_ED_PROGRAM"},
+        {"type": "text", "id": "AWARD_LEVEL"}, {"type": "int8", "id": "_full_count"},
+        {"type": "float4", "id": "rank"}], "q": "Child Care Provider/Assistant", "records":
+        [{"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total", "UNITID": "117715",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "12", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 35}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117715", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "12", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 36}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "117724",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "2", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 622}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "117724", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "14", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 623}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s degree",
+        "UNITID": "117724", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "37", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 624}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "117724", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "37", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 625}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates below
+        the baccalaureate total", "UNITID": "117724", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "16", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 626}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117724", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "53", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 627}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "117733", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "246", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 674}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Associate''s degree", "UNITID": "117733", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "53", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 675}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "117733", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "53", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 676}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID": "117733",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "246", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 677}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117733", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "299", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 678}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "129695",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 958}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "129695", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 959}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "129695", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 960}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "129756",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 11823}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "129756", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 11824}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "129756", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 11825}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "123217",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "49", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 12493}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Associate''s degree", "UNITID": "123217", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "32", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 12494}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "123217", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "32", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 12495}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID": "123217",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "49", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 12496}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "123217", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "81", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 12497}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Associate''s degree", "UNITID": "123299", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "12", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 12688}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "123299", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "12", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 12689}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "123299", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "12", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 12690}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Associate''s degree", "UNITID": "123484", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13770}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "123484", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13771}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "123484", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13772}, {"DISTANCE_ED_PROGRAM": "Yes",
+        "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years", "UNITID":
+        "134343", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "14", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13140}, {"DISTANCE_ED_PROGRAM":
+        "Yes", "AWARD_LEVEL": "Associate''s degree", "UNITID": "134343", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "4", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13141}, {"DISTANCE_ED_PROGRAM": "Yes",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "134343", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "4", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13142}, {"DISTANCE_ED_PROGRAM": "Yes",
+        "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID": "134343",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "14", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13143}, {"DISTANCE_ED_PROGRAM":
+        "Yes", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "134343", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "18", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13144}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "134495",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13182}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "134495", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13183}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "134495", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13184}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "123341",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "72", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13681}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "123341", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "13", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13682}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "123341", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "27", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13683}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "123341", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "27", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13684}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates
+        below the baccalaureate total", "UNITID": "123341", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "85", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13685}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "123341", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "112", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13686}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "117788", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "71", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13869}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Associate''s degree", "UNITID": "117788", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "47", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13870}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "117788", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "47", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13871}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID": "117788",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "71", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13872}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117788", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "118", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13873}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "117867",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "1", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 13909}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "117867", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "17", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13910}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "117867", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "23", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13911}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "117867", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "23", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 13912}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates
+        below the baccalaureate total", "UNITID": "117867", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "18", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13913}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117867", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "41", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 13914}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "134608", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 14052}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "134608", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "11", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 14053}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "134608", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "36", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 14054}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "134608", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "36", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 14055}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates
+        below the baccalaureate total", "UNITID": "134608", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "11", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 14056}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "134608", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "47", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 14057}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "106148", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 19881}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "106148", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 19882}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "106148", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 19883}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "130004",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20025}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "130004", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20026}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "130004", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20027}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "130040",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20071}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "130040", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20072}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "130040", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "4", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 20073}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Associate''s degree", "UNITID": "135160", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 22930}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "135160", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 22931}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "135160", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "6", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 22932}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "117894", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "66", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 23714}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "117894", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "19", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 23715}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "117894", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "23", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 23716}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "117894", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "23", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 23717}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates
+        below the baccalaureate total", "UNITID": "117894", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "85", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 23718}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "117894", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "108", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 23719}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Associate''s degree", "UNITID": "135188", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "5", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 25993}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees total", "UNITID": "135188", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "5", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 25994}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "135188", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "5", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 25995}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "135267", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "8", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27359}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "135267", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "8", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27360}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "135267", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "8", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27361}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "135294",
+        "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "7", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27400}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "135294", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "7", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27401}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "135294", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "7", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27402}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "135391", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "0", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 27428}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "135391", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "17", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 27429}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "135391", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "17", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 27430}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Certificates
+        below the baccalaureate total", "UNITID": "135391", "rank": 0.211562, "CIPCODE":
+        "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "0", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 27431}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "135391", "rank": 0.211562,
+        "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL": "17", "PROGRAM_TITLE":
+        "Child Care Provider/Assistant", "_id": 27432}, {"DISTANCE_ED_PROGRAM": "No",
+        "AWARD_LEVEL": "Award of less than 1 academic year", "UNITID": "130217", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27482}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Certificates below the baccalaureate total", "UNITID":
+        "130217", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27483}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Degrees/certificates total", "UNITID": "130217", "rank":
+        0.211562, "CIPCODE": "19.0709", "_full_count": "2067", "COMPLETIONS_TOTAL":
+        "0", "PROGRAM_TITLE": "Child Care Provider/Assistant", "_id": 27484}, {"DISTANCE_ED_PROGRAM":
+        "No", "AWARD_LEVEL": "Award of at least 1 but less than 2 academic years",
+        "UNITID": "118347", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "1", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 32010}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "118347", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "1", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 32011}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Degrees total",
+        "UNITID": "118347", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "1", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 32012}, {"DISTANCE_ED_PROGRAM": "No", "AWARD_LEVEL": "Associate''s
+        degree", "UNITID": "117715", "rank": 0.211562, "CIPCODE": "19.0709", "_full_count":
+        "2067", "COMPLETIONS_TOTAL": "12", "PROGRAM_TITLE": "Child Care Provider/Assistant",
+        "_id": 34}], "_links": {"start": "/api/3/action/datastore_search?q=Child+Care+Provider%2FAssistant&resource_id=6d2a0324-5964-44c3-97be-061c0eb5fcc9",
+        "next": "/api/3/action/datastore_search?q=Child+Care+Provider%2FAssistant&offset=100&resource_id=6d2a0324-5964-44c3-97be-061c0eb5fcc9"},
+        "total": 2067}}'
+    http_version: 
+  recorded_at: Tue, 19 Apr 2016 21:20:31 GMT
+recorded_with: VCR 3.0.1
