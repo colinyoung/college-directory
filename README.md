@@ -1,27 +1,19 @@
 # DataDotGov
 
+[![Circle CI](https://circleci.com/gh/moneythink/data.gov.svg?style=svg)](https://circleci.com/gh/moneythink/data.gov)
+
 This gem can be used to easily search and query the Data.gov CKAN APIs. For example, those located at:
 
 - http://www.ed.gov/developer
 - (Not an exhaustive list)
 
-Any resource that can be found on [data.gov](http://www.data.gov/) should be searchable via its `resource_id`, which take a format like `c95fae96-ce4a-459c-a935-ba2a37767ac9`.
+Any resource that can be found on [data.gov](http://www.data.gov/) should be searchable via its `resource_id`. These generally adhere to a format like `c95fae96-ce4a-459c-a935-ba2a37767ac9`, and can be found on Inventory pages [(example)](https://inventory.data.gov/dataset/032e19b4-5a90-41dc-83ff-6e4cd234f565/resource/38625c3d-5388-4c16-a30f-d105432553a4) and are found in the final portion of the URL path.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
 ```ruby
-gem 'DataDotGov'
+gem 'DataDotGov', github: 'moneythink/data.gov'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install DataDotGov
 
 ## Usage
 
