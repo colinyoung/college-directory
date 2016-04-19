@@ -1,6 +1,6 @@
 # DataDotGov
 
-[![Circle CI](https://circleci.com/gh/moneythink/data.gov.svg?style=svg)](https://circleci.com/gh/moneythink/data.gov) [![Code Climate](https://codeclimate.com/repos/5716a309ec824e00920037de/badges/f9f006b036c05bbbc3cd/gpa.svg)](https://codeclimate.com/repos/5716a309ec824e00920037de/feed) [![Test Coverage](https://codeclimate.com/repos/5716a309ec824e00920037de/badges/f9f006b036c05bbbc3cd/coverage.svg)](https://codeclimate.com/repos/5716a309ec824e00920037de/coverage)
+[![Circle CI](https://circleci.com/gh/moneythink/data.gov.svg?style=svg)](https://circleci.com/gh/moneythink/data.gov) [![Code Climate](https://codeclimate.com/github/moneythink/data.gov/badges/gpa.svg)](https://codeclimate.com/github/moneythink/data.gov) [![Test Coverage](https://codeclimate.com/github/moneythink/data.gov/badges/coverage.svg)](https://codeclimate.com/github/moneythink/data.gov/coverage) [![Issue Count](https://codeclimate.com/github/moneythink/data.gov/badges/issue_count.svg)](https://codeclimate.com/github/moneythink/data.gov)
 
 This gem can be used to easily search and query the Data.gov CKAN APIs. For example, those located at:
 
