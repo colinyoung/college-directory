@@ -38,4 +38,14 @@ describe DataDotGov do
       expect(results.last.award_level).to eq 'Associate\'s degree'
     end
   end
+
+  it 'will raise errors if initialized incorrectly' do
+    client = DataDotGov::Client.new()
+    expect { client.search('asdf') }.to raise_error(ArgumentError)
+  end
+
+  it 'can inspect constants' do
+    expect(DataDotGov::Resources::Ed.inspect).to eq '[:PostSecondary]'
+    expect(DataDotGov::Resources::Ed::PostSecondary.inspect).to eq '[:DIRECTORY_LISTING, :CIP_2000, :AWARDS_DEGREES_CONFERRED_BY_PROGRAM, :AWARDS_DEGREES_CONFERRED_ADV, :EDUCATIONAL_OFFERINGS__ATHLETIC_ASSOCIATIONS, :FINAID_AND_NET_PRICE]'
+  end
 end
