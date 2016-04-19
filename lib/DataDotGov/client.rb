@@ -5,12 +5,12 @@ require 'oj'
 
 module DataDotGov
   class Client
-    DEFAULTS = YAML::load_file(File.dirname(__FILE__) + '/../../config/defaults.yml')
+    DEFAULTS = YAML.load_file(File.dirname(__FILE__) + '/../../config/defaults.yml')
 
     def initialize(options = {})
       options = stringify_hash(options)
 
-      if options.has_key?('link')
+      if options.key?('link')
         options['resource_id'] = options['link'].split('/').last
       end
 
@@ -19,7 +19,7 @@ module DataDotGov
       @options = DEFAULTS.merge(stringify_hash(options))
     end
 
-    def search(value, offset = 0, limit = @options['limit'])
+    def search(value, _offset = 0, _limit = @options['limit'])
       preflight!
 
       uri = URI.parse(endpoint + '/action/datastore_search')
@@ -64,11 +64,11 @@ module DataDotGov
     end
 
     def missing_key!(key)
-      raise ArgumentError.new("Required key '#{key}' not defined in #{self.class.name}.new().")
+      fail ArgumentError.new("Required key '#{key}' not defined in #{self.class.name}.new().")
     end
 
     def stringify_hash(hash)
-      Hash[hash.map {|k,v| [k.to_s, v] }]
+      Hash[hash.map { |k, v| [k.to_s, v] }]
     end
   end
 end

@@ -1,7 +1,7 @@
 module DataDotGov
   module Objects
     class PostSecondary < Base
-      def initialize(attributes = {}, aliases = {})
+      def initialize(attributes = {}, _aliases = {})
         super(
           attributes,
           # Aliases

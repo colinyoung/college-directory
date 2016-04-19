@@ -21,7 +21,7 @@ module DataDotGov
 
       def method_missing(*args)
         name = args.shift
-        instance_variable_get("@#{name.to_s}") || instance_variable_get("@#{name.upcase.to_s}")
+        instance_variable_get("@#{name}") || instance_variable_get("@#{name.upcase}")
       end
     end
   end
