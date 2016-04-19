@@ -1,3 +1,8 @@
+if ENV['CI']
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
+end
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'DataDotGov'
 
@@ -7,10 +12,3 @@ VCR.configure do |config|
   config.hook_into :webmock # or :fakeweb
   config.default_cassette_options = { record: :none }
 end
-
-if ENV['CI']
-  require 'codeclimate-test-reporter'
-  CodeClimate::TestReporter.start
-end
-
-require 'byebug'
