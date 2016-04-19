@@ -1,6 +1,6 @@
 require 'yaml'
-require 'net/http'
 require 'uri'
+require 'open-uri'
 require 'oj'
 
 module DataDotGov
@@ -22,21 +22,14 @@ module DataDotGov
     def search(value, _offset = 0, _limit = @options['limit'])
       preflight!
 
-      uri = URI.parse(endpoint + '/action/datastore_search')
+
       params = {
         q: value,
         resource_id: resource_id
       }
-      uri.query = URI.encode_www_form(params)
-      parse_response Net::HTTP.get_response(uri)
-      # post = Net::HTTP::Post.new(uri.request_uri)
-      # post.body = JSON.generate(
-      #   q: value,
-      #   resource_id: resource_id,
-      #   offset: offset,
-      #   limit: limit
-      # )
-      # p post.body
+      query = URI.encode_www_form(params)
+      uri = URI.parse(endpoint + '/action/datastore_search' + '?' + query)
+      parse_response uri.read
     end
 
     def endpoint
@@ -50,7 +43,7 @@ module DataDotGov
     private
 
     def parse_response(response)
-      payload = Oj.load(response.body)
+      payload = Oj.load(response)
       result = payload['result']
       return unless result
 
