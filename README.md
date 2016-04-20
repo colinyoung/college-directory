@@ -30,7 +30,14 @@ results.last.program_title # => 'Child Card Provider/Assistant'
 results.first.award_level # => 'Associate's degree'
 ```
 
-## Search methods
+## Client methods
+
+Methods you can use to search with a `DataDotGov::Client` instance:
+
+- [search](#search)
+- [contains](#contains)
+- [starts_with](#starts_with)
+- [find](#find-has-some-caveats)
 
 #### `search`
 
