@@ -1,0 +1,1120 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://inventory.data.gov/api/3/action/datastore_search?limit=20&offset=0&q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Apr 2016 15:55:07 GMT
+      Server:
+      - Apache
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '31549'
+      Content-Type:
+      - application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"help": "https://inventory.data.gov/api/3/action/help_show?name=datastore_search",
+        "success": true, "result": {"resource_id": "38625c3d-5388-4c16-a30f-d105432553a4",
+        "fields": [{"type": "int4", "id": "_id"}, {"type": "numeric", "id": "UNITID"},
+        {"type": "text", "id": "INSTNM"}, {"type": "text", "id": "ADDR"}, {"type":
+        "text", "id": "CITY"}, {"type": "text", "id": "STABBR"}, {"type": "text",
+        "id": "ZIP"}, {"type": "numeric", "id": "FIPS"}, {"type": "numeric", "id":
+        "OBEREG"}, {"type": "text", "id": "CHFNM"}, {"type": "text", "id": "CHFTITLE"},
+        {"type": "text", "id": "GENTELE"}, {"type": "text", "id": "FAXTELE"}, {"type":
+        "numeric", "id": "EIN"}, {"type": "numeric", "id": "OPEID"}, {"type": "numeric",
+        "id": "OPEFLAG"}, {"type": "text", "id": "WEBADDR"}, {"type": "text", "id":
+        "ADMINURL"}, {"type": "text", "id": "FAIDURL"}, {"type": "text", "id": "APPLURL"},
+        {"type": "text", "id": "NPRICURL"}, {"type": "numeric", "id": "SECTOR"}, {"type":
+        "numeric", "id": "ICLEVEL"}, {"type": "numeric", "id": "CONTROL"}, {"type":
+        "numeric", "id": "HLOFFER"}, {"type": "numeric", "id": "UGOFFER"}, {"type":
+        "numeric", "id": "GROFFER"}, {"type": "numeric", "id": "HDEGOFR1"}, {"type":
+        "numeric", "id": "DEGGRANT"}, {"type": "numeric", "id": "HBCU"}, {"type":
+        "numeric", "id": "HOSPITAL"}, {"type": "numeric", "id": "MEDICAL"}, {"type":
+        "numeric", "id": "TRIBAL"}, {"type": "numeric", "id": "LOCALE"}, {"type":
+        "numeric", "id": "OPENPUBL"}, {"type": "text", "id": "ACT"}, {"type": "numeric",
+        "id": "NEWID"}, {"type": "numeric", "id": "DEATHYR"}, {"type": "timestamp",
+        "id": "CLOSEDAT"}, {"type": "numeric", "id": "CYACTIVE"}, {"type": "numeric",
+        "id": "POSTSEC"}, {"type": "numeric", "id": "PSEFLAG"}, {"type": "numeric",
+        "id": "PSET4FLG"}, {"type": "numeric", "id": "RPTMTH"}, {"type": "text", "id":
+        "IALIAS"}, {"type": "numeric", "id": "INSTCAT"}, {"type": "numeric", "id":
+        "CCBASIC"}, {"type": "numeric", "id": "CCIPUG"}, {"type": "numeric", "id":
+        "CCIPGRAD"}, {"type": "numeric", "id": "CCUGPROF"}, {"type": "numeric", "id":
+        "CCENRPRF"}, {"type": "numeric", "id": "CCSIZSET"}, {"type": "numeric", "id":
+        "CARNEGIE"}, {"type": "numeric", "id": "LANDGRNT"}, {"type": "numeric", "id":
+        "INSTSIZE"}, {"type": "numeric", "id": "CBSA"}, {"type": "numeric", "id":
+        "CBSATYPE"}, {"type": "numeric", "id": "CSA"}, {"type": "numeric", "id": "NECTA"},
+        {"type": "numeric", "id": "F1SYSTYP"}, {"type": "text", "id": "F1SYSNAM"},
+        {"type": "numeric", "id": "F1SYSCOD"}, {"type": "numeric", "id": "COUNTYCD"},
+        {"type": "text", "id": "COUNTYNM"}, {"type": "numeric", "id": "CNGDSTCD"},
+        {"type": "numeric", "id": "LONGITUD"}, {"type": "numeric", "id": "LATITUDE"},
+        {"type": "int8", "id": "_full_count"}, {"type": "float4", "id": "rank"}],
+        "q": "iowa", "records": [{"SECTOR": "4", "STABBR": "AR", "_full_count": "27",
+        "CHFTITLE": "Chancellor", "FAXTELE": "5018828970", "CBSATYPE": "2", "LOCALE":
+        "31", "MEDICAL": "2", "APPLURL": "https://www3.asub.edu/admissions/application.asp",
+        "CARNEGIE": "40", "OBEREG": "5", "CBSA": "42620", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.asub.edu", "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.asub.edu/finaid/", "INSTNM": "Arkansas State University-Beebe",
+        "HDEGOFR1": "40", "LONGITUD": "-91.896165", "DEGGRANT": "1", "EIN": "710421333",
+        "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "72012-1000", "GENTELE":
+        "5018823600", "ADMINURL": "www.asub.edu/admissions/", "COUNTYNM": "White County",
+        "F1SYSNAM": "Arkansas State University System", "CHFNM": "Eugene McKay", "CSA":
+        "340", "COUNTYCD": "5145", "IALIAS": "ASU-BEEBE", "F1SYSCOD": "105010", "CCBASIC":
+        "11", "FIPS": "5", "rank": 0.0573088, "UNITID": "106449", "INSTCAT": "4",
+        "OPEID": "109100", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.asub.edu/finaid/npcalc/npcalc.htm",
+        "CITY": "Beebe", "OPENPUBL": "1", "ADDR": "1000 Iowa Street", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "35.074512", "PSET4FLG": "1", "CNGDSTCD": "502", "_id": 150,
+        "CCIPUG": "1"}, {"SECTOR": "2", "STABBR": "IL", "_full_count": "27", "CHFTITLE":
+        "Interim Chancellor", "FAXTELE": "3097797748", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "https://secure.ihs.org/blank.cfm?id=15",
+        "CARNEGIE": "53", "OBEREG": "3", "CBSA": "19340", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "-2", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "2", "WEBADDR": "www.trinitycollegeqc.edu", "INSTSIZE": "1", "CYACTIVE": "1",
+        "GROFFER": "1", "HLOFFER": "7", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT":
+        "2015-01-02T00:00:00", "FAIDURL": "www.trinitycollegeqc.edu/Tuition---Aid.aspx",
+        "INSTNM": "Trinity College of Nursing & Health Sciences", "HDEGOFR1": "20",
+        "LONGITUD": "-90.570910", "DEGGRANT": "1", "EIN": "362739299", "NECTA": "-2",
+        "CCIPGRAD": "-2", "HBCU": "2", "ZIP": "61201-5317", "GENTELE": "3097797700",
+        "ADMINURL": "www.trinitycollegeqc.edu/Admissions.aspx", "COUNTYNM": "Rock
+        Island County", "F1SYSNAM": "Trinity Medical Center - Iowa Health", "CHFNM":
+        "Tracy Poelvoorde MS, RN, PhD Candidate", "CSA": "209", "COUNTYCD": "17161",
+        "IALIAS": "Trinity College|Trinity College of Nursing and Health Sciences|Trinity
+        College of Nursing", "F1SYSCOD": "201520", "CCBASIC": "26", "FIPS": "17",
+        "rank": 0.0573088, "UNITID": "146755", "INSTCAT": "3", "OPEID": "622500",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "trinitycollegeqc.edu/Tuition---Aid/Net-Price-Calculator/Calculator.aspx",
+        "CITY": "Rock Island", "OPENPUBL": "1", "ADDR": "2122 - 25th Avenue", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "2", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "-2", "LATITUDE": "41.485590", "PSET4FLG": "1", "CNGDSTCD": "1717", "_id":
+        1168, "CCIPUG": "-2"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5152445158", "CBSATYPE": "1", "LOCALE":
+        "12", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG": "4", "CBSA":
+        "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR": "www.americancollegeofhair.com",
+        "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "4", "HOSPITAL":
+        "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.admissions.americancollegeofhair.com",
+        "INSTNM": "American College of Hairstyling-Des Moines", "HDEGOFR1": "0", "LONGITUD":
+        "-93.610649", "DEGGRANT": "2", "EIN": "421069751", "NECTA": "-2", "CCIPGRAD":
+        "-3", "HBCU": "2", "ZIP": "50309", "GENTELE": "5152440971", "ADMINURL": "www.admissions.americancollegeofhair.com",
+        "COUNTYNM": "Polk County", "F1SYSNAM": "American Colleges of Hairstyling Inc.",
+        "CHFNM": "T L Millis", "CSA": "218", "COUNTYCD": "19153", "IALIAS": "Iowa
+        School of Men''s Hairstyling, Inc. dba |American College of Hairstyling -
+        Des Moines", "F1SYSCOD": "300230", "CCBASIC": "-3", "FIPS": "19", "rank":
+        0.0573088, "UNITID": "153588", "INSTCAT": "6", "OPEID": "765800", "PSEFLAG":
+        "1", "POSTSEC": "1", "NPRICURL": "americancollegeofhair.com", "CITY": "Des
+        Moines", "OPENPUBL": "1", "ADDR": "603 E Sixth St", "F1SYSTYP": "1", "TRIBAL":
+        "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE":
+        "41.592188", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id": 1373, "CCIPUG": "-3"},
+        {"SECTOR": "1", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President",
+        "FAXTELE": "5152942592", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "1",
+        "APPLURL": "www.admissions.iastate.edu/apply/", "CARNEGIE": "15", "OBEREG":
+        "4", "CBSA": "11180", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "16", "LANDGRNT":
+        "1", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.iastate.edu",
+        "INSTSIZE": "5", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "9", "HOSPITAL":
+        "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.financialaid.iastate.edu/",
+        "INSTNM": "Iowa State University", "HDEGOFR1": "11", "LONGITUD": "-93.648353",
+        "DEGGRANT": "1", "EIN": "426004224", "NECTA": "-2", "CCIPGRAD": "14", "HBCU":
+        "2", "ZIP": "50011-2030", "GENTELE": "5152945836", "ADMINURL": "www.admissions.iastate.edu/",
+        "COUNTYNM": "Story County", "F1SYSNAM": " ", "CHFNM": "Steven Leath", "CSA":
+        "218", "COUNTYCD": "19169", "IALIAS": "ISU", "F1SYSCOD": "-2", "CCBASIC":
+        "15", "FIPS": "19", "rank": 0.0573088, "UNITID": "153603", "INSTCAT": "2",
+        "OPEID": "186900", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.financialaid.iastate.edu/planning/financialcalculator.php",
+        "CITY": "Ames", "OPENPUBL": "1", "ADDR": "3410 Beardshear Hall", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "4", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "13", "LATITUDE": "42.026368", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1375, "CCIPUG": "14"}, {"SECTOR": "2", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "3193856203", "CBSATYPE": "-2", "LOCALE":
+        "33", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "32", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "7", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.iwc.edu", "INSTSIZE":
+        "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "5", "HOSPITAL": "2", "ICLEVEL":
+        "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Iowa Wesleyan
+        College", "HDEGOFR1": "30", "LONGITUD": "-91.552588", "DEGGRANT": "1", "EIN":
+        "420680332", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "52641",
+        "GENTELE": "3193858021", "ADMINURL": " ", "COUNTYNM": "Henry County", "F1SYSNAM":
+        " ", "CHFNM": "Steven E. Titus", "CSA": "-2", "COUNTYCD": "19087", "IALIAS":
+        " ", "F1SYSCOD": "-2", "CCBASIC": "22", "FIPS": "19", "rank": 0.0573088, "UNITID":
+        "153621", "INSTCAT": "2", "OPEID": "187100", "PSEFLAG": "1", "POSTSEC": "1",
+        "NPRICURL": "www.iwc.edu/NetPrice/npcalc.htm", "CITY": "Mount Pleasant", "OPENPUBL":
+        "1", "ADDR": "601 N Main Street", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF":
+        "2", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "6", "LATITUDE": "40.973689",
+        "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1376, "CCIPUG": "12"}, {"SECTOR":
+        "4", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE":
+        " ", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "2", "APPLURL": "www.iwcc.edu/future_student/",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "36540", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iwcc.edu/", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iwcc.edu/future_student/financial_aid/", "INSTNM": "Iowa Western
+        Community College", "HDEGOFR1": "40", "LONGITUD": "-95.801053", "DEGGRANT":
+        "1", "EIN": "420925013", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "51503-1057", "GENTELE": "7123253200", "ADMINURL": "www.iwcc.edu/future_student/",
+        "COUNTYNM": "Pottawattamie County", "F1SYSNAM": " ", "CHFNM": "Dr. Dan Kinney",
+        "CSA": "420", "COUNTYCD": "19155", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC":
+        "5", "FIPS": "19", "rank": 0.0573088, "UNITID": "153630", "INSTCAT": "4",
+        "OPEID": "459800", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iwcc.edu/future_student/financial_aid/npcalc.asp",
+        "CITY": "Council Bluffs", "OPENPUBL": "1", "ADDR": "2700 College Rd", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "41.274137", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1377, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "Interim President", "FAXTELE": "6414231711", "CBSATYPE": "2",
+        "LOCALE": "33", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG":
+        "4", "CBSA": "32380", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "3", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.niacc.edu",
+        "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM":
+        "North Iowa Area Community College", "HDEGOFR1": "40", "LONGITUD": "-93.131683",
+        "DEGGRANT": "1", "EIN": "420930155", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "50401", "GENTELE": "6414231264", "ADMINURL": " ", "COUNTYNM":
+        "Cerro Gordo County", "F1SYSNAM": " ", "CHFNM": "David Buettner", "CSA": "-2",
+        "COUNTYCD": "19033", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "2", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "154059", "INSTCAT": "4", "OPEID": "187700",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.niacc.edu/finaid/NetPriceCalculator.html",
+        "CITY": "Mason City", "OPENPUBL": "1", "ADDR": "500 College Dr", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.157598", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1392, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5635623719", "CBSATYPE": "-2", "LOCALE":
+        "42", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.nicc.edu", "INSTSIZE":
+        "3", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL":
+        "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Northeast
+        Iowa Community College-Calmar", "HDEGOFR1": "40", "LONGITUD": "-91.865647",
+        "DEGGRANT": "1", "EIN": "420924711", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "52132-0400", "GENTELE": "5635623263", "ADMINURL": " ", "COUNTYNM":
+        "Winneshiek County", "F1SYSNAM": " ", "CHFNM": "Doctor Liang Chee Wee", "CSA":
+        "-2", "COUNTYCD": "19191", "IALIAS": "NICC", "F1SYSCOD": "-2", "CCBASIC":
+        "2", "FIPS": "19", "rank": 0.0573088, "UNITID": "154110", "INSTCAT": "4",
+        "OPEID": "458700", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.nicc.edu/financialaid/netpricecalculator/",
+        "CITY": "Calmar", "OPENPUBL": "1", "ADDR": "1625 Hwy 150", "F1SYSTYP": "2",
+        "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.174954", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1395, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7123244136", "CBSATYPE": "-2", "LOCALE":
+        "41", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "2", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.nwicc.edu", "INSTSIZE":
+        "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL":
+        "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Northwest
+        Iowa Community College", "HDEGOFR1": "40", "LONGITUD": "-95.878781", "DEGGRANT":
+        "1", "EIN": "420926341", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "51201", "GENTELE": "7123245061", "ADMINURL": " ", "COUNTYNM": "Sioux County",
+        "F1SYSNAM": " ", "CHFNM": "Alethea Stubbe", "CSA": "-2", "COUNTYCD": "19167",
+        "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "1", "FIPS": "19", "rank": 0.0573088,
+        "UNITID": "154129", "INSTCAT": "4", "OPEID": "460000", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "www.nwicc.edu/compliance/", "CITY": "Sheldon", "OPENPUBL":
+        "1", "ADDR": "603 W Park St", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF":
+        "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "2", "LATITUDE": "43.184603",
+        "PSET4FLG": "1", "CNGDSTCD": "1904", "_id": 1396, "CCIPUG": "1"}, {"SECTOR":
+        "2", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "Chancellor", "FAXTELE":
+        "7122338017", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "2", "APPLURL":
+        " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA": "43580", "NEWID": "-2", "ACT":
+        "A ", "CCSIZSET": "1", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "2", "WEBADDR": "www.stlukescollege.edu", "INSTSIZE": "1", "CYACTIVE": "1",
+        "GROFFER": "2", "HLOFFER": "5", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT":
+        "2015-01-02T00:00:00", "FAIDURL": "www.stlukescollege.edu/body.cfm?id=15",
+        "INSTNM": "St Luke''s College", "HDEGOFR1": "30", "LONGITUD": "-96.404922",
+        "DEGGRANT": "1", "EIN": "420925159", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "51104-0263", "GENTELE": "7122793149", "ADMINURL": "www.stlukescollege.edu/body.cfm?id=14",
+        "COUNTYNM": "Woodbury County", "F1SYSNAM": "Iowa Health System", "CHFNM":
+        "Michael D Stiles", "CSA": "512", "COUNTYCD": "19193", "IALIAS": " ", "F1SYSCOD":
+        "200740", "CCBASIC": "9", "FIPS": "19", "rank": 0.0573088, "UNITID": "154262",
+        "INSTCAT": "3", "OPEID": "729100", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL":
+        "www.stlukescollege.edu/body_costcalculator.cfm", "CITY": "Sioux City", "OPENPUBL":
+        "1", "ADDR": "2720 Stone Park Blvd", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF":
+        "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "3", "LATITUDE": "42.517806",
+        "PSET4FLG": "1", "CNGDSTCD": "1904", "_id": 1402, "CCIPUG": "1"}, {"SECTOR":
+        "2", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE":
+        "5634255323", "CBSATYPE": "-2", "LOCALE": "43", "MEDICAL": "2", "APPLURL":
+        "www.uiu.edu/calltoaction/apply.html", "CARNEGIE": "32", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "13", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.uiu.edu", "INSTSIZE":
+        "3", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "7", "HOSPITAL": "2", "ICLEVEL":
+        "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.uiu.edu/admissions/financialaid/index.html",
+        "INSTNM": "Upper Iowa University", "HDEGOFR1": "20", "LONGITUD": "-91.799663",
+        "DEGGRANT": "1", "EIN": "420680372", "NECTA": "-2", "CCIPGRAD": "10", "HBCU":
+        "2", "ZIP": "52142-1857", "GENTELE": "5634255200", "ADMINURL": "www.uiu.edu/admissions/index.html",
+        "COUNTYNM": "Fayette County", "F1SYSNAM": " ", "CHFNM": "William R. Duffy",
+        "CSA": "-2", "COUNTYCD": "19065", "IALIAS": "UIU", "F1SYSCOD": "-2", "CCBASIC":
+        "19", "FIPS": "19", "rank": 0.0573088, "UNITID": "154493", "INSTCAT": "2",
+        "OPEID": "189300", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "npc.collegeboard.org/student/app/uiu",
+        "CITY": "Fayette", "OPENPUBL": "1", "ADDR": "605 Washington St", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "4", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "5", "LATITUDE": "42.840293", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1411, "CCIPUG": "13"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7122746412", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "www.witcc.edu/registration/", "CARNEGIE":
+        "40", "OBEREG": "4", "CBSA": "43580", "NEWID": "-2", "ACT": "A ", "CCSIZSET":
+        "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR":
+        "www.witcc.edu", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER":
+        "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL":
+        "www.witcc.edu/financial_aid/index.cfm", "INSTNM": "Western Iowa Tech Community
+        College", "HDEGOFR1": "40", "LONGITUD": "-96.348874", "DEGGRANT": "1", "EIN":
+        "420926922", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "51102-5199",
+        "GENTELE": "7122746400", "ADMINURL": "www.witcc.edu/registration/", "COUNTYNM":
+        "Woodbury County", "F1SYSNAM": " ", "CHFNM": "Terry Murrell", "CSA": "512",
+        "COUNTYCD": "19193", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "3", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "154572", "INSTCAT": "4", "OPEID": "731600",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.witcc.edu/financial_aid/cost.cfm",
+        "CITY": "Sioux City", "OPENPUBL": "1", "ADDR": "4647 Stone Ave", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "42.482953", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1416, "CCIPUG": "1"}, {"SECTOR": "9", "STABBR": "KS", "_full_count": "27",
+        "CHFTITLE": "Co-Owner", "FAXTELE": "7857496070", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG": "4", "CBSA":
+        "29940", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR": "www.zhairacademy.com/", "INSTSIZE":
+        "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "2", "HOSPITAL": "-2", "ICLEVEL":
+        "3", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Z Hair
+        Academy", "HDEGOFR1": "0", "LONGITUD": "-95.262052", "DEGGRANT": "2", "EIN":
+        "205942606", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "66046",
+        "GENTELE": "7857491488", "ADMINURL": " ", "COUNTYNM": "Douglas County", "F1SYSNAM":
+        " ", "CHFNM": "Ron McKenzie", "CSA": "312", "COUNTYCD": "20045", "IALIAS":
+        " ", "F1SYSCOD": "-2", "CCBASIC": "-3", "FIPS": "20", "rank": 0.0573088, "UNITID":
+        "451237", "INSTCAT": "6", "OPEID": "4132900", "PSEFLAG": "1", "POSTSEC": "1",
+        "NPRICURL": "www.zhairacademy.com", "CITY": "Lawrence", "OPENPUBL": "1", "ADDR":
+        "2429 Iowa St Ste E", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR":
+        "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "38.939914", "PSET4FLG":
+        "1", "CNGDSTCD": "2002", "_id": 6492, "CCIPUG": "-3"}, {"SECTOR": "4", "STABBR":
+        "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE": "5155767724",
+        "CBSATYPE": "2", "LOCALE": "33", "MEDICAL": "2", "APPLURL": "www.iowacentral.edu/admissions/admissions_application.asp",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "22700", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iowacentral.edu", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iowacentral.edu/financial_aid/index.asp", "INSTNM": "Iowa
+        Central Community College", "HDEGOFR1": "40", "LONGITUD": "-94.201408", "DEGGRANT":
+        "1", "EIN": "410906391", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "50501", "GENTELE": "5155767201", "ADMINURL": "www.iowacentral.edu/admissions/index.asp",
+        "COUNTYNM": "Webster County", "F1SYSNAM": " ", "CHFNM": "Dr. Daniel Kinney",
+        "CSA": "-2", "COUNTYCD": "19187", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC":
+        "2", "FIPS": "19", "rank": 0.0573088, "UNITID": "153524", "INSTCAT": "4",
+        "OPEID": "186500", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowacentral.edu/",
+        "CITY": "Fort Dodge", "OPENPUBL": "1", "ADDR": "One Triton Circle", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "42.489821", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1370, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7123620480", "CBSATYPE": "-2", "LOCALE":
+        "33", "MEDICAL": "2", "APPLURL": "https://www.iowalakes.edu/apply_now/index.cfm",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "-2", "NEWID": "-2", "ACT": "A ",
+        "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iowalakes.edu", "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iowalakes.edu/financial_aid/", "INSTNM": "Iowa Lakes Community
+        College", "HDEGOFR1": "40", "LONGITUD": "-94.835770", "DEGGRANT": "1", "EIN":
+        "420929936", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "51334-2295",
+        "GENTELE": "7123622601", "ADMINURL": "www.iowalakes.edu/admissions/", "COUNTYNM":
+        "Emmet County", "F1SYSNAM": " ", "CHFNM": "Valerie Newhouse", "CSA": "-2",
+        "COUNTYCD": "19063", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "2", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "153533", "INSTCAT": "4", "OPEID": "186400",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowalakes.edu/financial_aid/net_price_calculator/npcalc.htm",
+        "CITY": "Estherville", "OPENPUBL": "1", "ADDR": "19 S 7th St", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.401728", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1371, "CCIPUG": "1"}, {"SECTOR": "5", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President and CEO", "FAXTELE": "5152418015", "CBSATYPE": "1",
+        "LOCALE": "12", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG":
+        "4", "CBSA": "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.iowahealth.org/radtech",
+        "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "4", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.iowahealth.org/radtech",
+        "INSTNM": "UnityPoint Health-Des Moines School of Radiologic Technology",
+        "HDEGOFR1": "0", "LONGITUD": "-93.635129", "DEGGRANT": "2", "EIN": "420680452",
+        "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50309-1453", "GENTELE":
+        "5152416880", "ADMINURL": "www.iowahealth.org/radtech", "COUNTYNM": "Polk
+        County", "F1SYSNAM": "Iowa Health System", "CHFNM": "Eric Crowell", "CSA":
+        "218", "COUNTYCD": "19153", "IALIAS": " ", "F1SYSCOD": "200740", "CCBASIC":
+        "-3", "FIPS": "19", "rank": 0.0573088, "UNITID": "153542", "INSTCAT": "6",
+        "OPEID": "626700", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowahealth.org/radtech",
+        "CITY": "Des Moines", "OPENPUBL": "1", "ADDR": "1200 Pleasant St", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "-3", "LATITUDE": "41.590094", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1372, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "6417524909", "CBSATYPE": "2", "LOCALE":
+        "32", "MEDICAL": "2", "APPLURL": "iowaschoolofbeauty.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "32260", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "iowaschoolofbeauty.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2",
+        "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "iowaschoolofbeauty.com", "INSTNM": "Iowa School of Beauty-Marshalltown",
+        "HDEGOFR1": "0", "LONGITUD": "-92.913104", "DEGGRANT": "2", "EIN": "421009287",
+        "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50158", "GENTELE": "6417524223",
+        "ADMINURL": "iowaschoolofbeauty.com", "COUNTYNM": "Marshall County", "F1SYSNAM":
+        "Iowa School of Beauty Inc.", "CHFNM": "Mark Oswald", "CSA": "-2", "COUNTYCD":
+        "19127", "IALIAS": " ", "F1SYSCOD": "302550", "CCBASIC": "-3", "FIPS": "19",
+        "rank": 0.070624099999999995, "UNITID": "153171", "INSTCAT": "6", "OPEID":
+        "2330900", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "iowaschoolofbeauty.com/npcalc.html",
+        "CITY": "Marshalltown", "OPENPUBL": "1", "ADDR": "112 Nicholas Dr", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "42.014681", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1350, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "3193543335", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "tspaiowacity.com/apply_popup.html", "CARNEGIE":
+        "-3", "OBEREG": "4", "CBSA": "26980", "NEWID": "-2", "ACT": "A ", "CCSIZSET":
+        "-3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "tspaiowacity.com/", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER":
+        "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "tspaiowacity.com/consumer.html", "INSTNM": "The Salon Professional
+        Academy-Iowa City", "HDEGOFR1": "0", "LONGITUD": "-91.503041", "DEGGRANT":
+        "2", "EIN": "205752029", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP":
+        "52240-6083", "GENTELE": "319248295812", "ADMINURL": "tspaiowacity.com", "COUNTYNM":
+        "Johnson County", "F1SYSNAM": " ", "CHFNM": "Melissa MMoreland", "CSA": "168",
+        "COUNTYCD": "19103", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "-3", "FIPS":
+        "19", "rank": 0.070624099999999995, "UNITID": "461731", "INSTCAT": "6", "OPEID":
+        "4177800", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "tspaiowacity.com/netpricecalculator/index.htm",
+        "CITY": "Iowa City", "OPENPUBL": "1", "ADDR": "1550 South 1st Avenue", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "41.642590", "PSET4FLG": "1", "CNGDSTCD": "1902", "_id":
+        7207, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5152780793", "CBSATYPE": "1", "LOCALE":
+        "21", "MEDICAL": "2", "APPLURL": "iowaschoolofbeauty.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "iowaschoolofbeauty.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2",
+        "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "iowaschoolofbeauty.com", "INSTNM": "Iowa School of Beauty-Des
+        Moines", "HDEGOFR1": "0", "LONGITUD": "-93.712317", "DEGGRANT": "2", "EIN":
+        "421009287", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50322-3203",
+        "GENTELE": "515278993912", "ADMINURL": "iowaschoolofbeauty.com", "COUNTYNM":
+        "Polk County", "F1SYSNAM": "Iowa School of Beauty Inc.", "CHFNM": "Mark Oswald",
+        "CSA": "218", "COUNTYCD": "19153", "IALIAS": " ", "F1SYSCOD": "302550", "CCBASIC":
+        "-3", "FIPS": "19", "rank": 0.070624099999999995, "UNITID": "153597", "INSTCAT":
+        "6", "OPEID": "826000", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "iowaschoolofbeauty.com/npcalc.html",
+        "CITY": "Des Moines", "OPENPUBL": "1", "ADDR": "3305 70th St", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "41.624599", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1374, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": " ", "CBSATYPE": "1", "LOCALE": "13",
+        "MEDICAL": "2", "APPLURL": "www.lajamesinternational.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "26980", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "www.lajamesinternational.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.lajamesinternational.com", "INSTNM": "La James International
+        College-Iowa City", "HDEGOFR1": "0", "LONGITUD": "-91.532238", "DEGGRANT":
+        "2", "EIN": "421282283", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP":
+        "52245", "GENTELE": "3193383926", "ADMINURL": "www.lajamesinternational.com",
+        "COUNTYNM": "Johnson County", "F1SYSNAM": "La James International College",
+        "CHFNM": "Cynthia Becher", "CSA": "168", "COUNTYCD": "19103", "IALIAS": "
+        ", "F1SYSCOD": "302750", "CCBASIC": "-3", "FIPS": "19", "rank": 0.070624099999999995,
+        "UNITID": "154341", "INSTCAT": "6", "OPEID": "959300", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "www.lajamesinternational.com", "CITY": "Iowa City", "OPENPUBL":
+        "1", "ADDR": "227 E Market-Brewery Sq", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF":
+        "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "41.663776",
+        "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1404, "CCIPUG": "-3"}], "limit":
+        20, "offset": 0, "_links": {"start": "/api/3/action/datastore_search?q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=20",
+        "next": "/api/3/action/datastore_search?q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=20&offset=20"},
+        "total": 27}}'
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 15:55:08 GMT
+- request:
+    method: get
+    uri: https://inventory.data.gov/api/3/action/datastore_search?limit=50&offset=0&q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Apr 2016 15:55:26 GMT
+      Server:
+      - Apache
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '41990'
+      Content-Type:
+      - application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"help": "https://inventory.data.gov/api/3/action/help_show?name=datastore_search",
+        "success": true, "result": {"resource_id": "38625c3d-5388-4c16-a30f-d105432553a4",
+        "fields": [{"type": "int4", "id": "_id"}, {"type": "numeric", "id": "UNITID"},
+        {"type": "text", "id": "INSTNM"}, {"type": "text", "id": "ADDR"}, {"type":
+        "text", "id": "CITY"}, {"type": "text", "id": "STABBR"}, {"type": "text",
+        "id": "ZIP"}, {"type": "numeric", "id": "FIPS"}, {"type": "numeric", "id":
+        "OBEREG"}, {"type": "text", "id": "CHFNM"}, {"type": "text", "id": "CHFTITLE"},
+        {"type": "text", "id": "GENTELE"}, {"type": "text", "id": "FAXTELE"}, {"type":
+        "numeric", "id": "EIN"}, {"type": "numeric", "id": "OPEID"}, {"type": "numeric",
+        "id": "OPEFLAG"}, {"type": "text", "id": "WEBADDR"}, {"type": "text", "id":
+        "ADMINURL"}, {"type": "text", "id": "FAIDURL"}, {"type": "text", "id": "APPLURL"},
+        {"type": "text", "id": "NPRICURL"}, {"type": "numeric", "id": "SECTOR"}, {"type":
+        "numeric", "id": "ICLEVEL"}, {"type": "numeric", "id": "CONTROL"}, {"type":
+        "numeric", "id": "HLOFFER"}, {"type": "numeric", "id": "UGOFFER"}, {"type":
+        "numeric", "id": "GROFFER"}, {"type": "numeric", "id": "HDEGOFR1"}, {"type":
+        "numeric", "id": "DEGGRANT"}, {"type": "numeric", "id": "HBCU"}, {"type":
+        "numeric", "id": "HOSPITAL"}, {"type": "numeric", "id": "MEDICAL"}, {"type":
+        "numeric", "id": "TRIBAL"}, {"type": "numeric", "id": "LOCALE"}, {"type":
+        "numeric", "id": "OPENPUBL"}, {"type": "text", "id": "ACT"}, {"type": "numeric",
+        "id": "NEWID"}, {"type": "numeric", "id": "DEATHYR"}, {"type": "timestamp",
+        "id": "CLOSEDAT"}, {"type": "numeric", "id": "CYACTIVE"}, {"type": "numeric",
+        "id": "POSTSEC"}, {"type": "numeric", "id": "PSEFLAG"}, {"type": "numeric",
+        "id": "PSET4FLG"}, {"type": "numeric", "id": "RPTMTH"}, {"type": "text", "id":
+        "IALIAS"}, {"type": "numeric", "id": "INSTCAT"}, {"type": "numeric", "id":
+        "CCBASIC"}, {"type": "numeric", "id": "CCIPUG"}, {"type": "numeric", "id":
+        "CCIPGRAD"}, {"type": "numeric", "id": "CCUGPROF"}, {"type": "numeric", "id":
+        "CCENRPRF"}, {"type": "numeric", "id": "CCSIZSET"}, {"type": "numeric", "id":
+        "CARNEGIE"}, {"type": "numeric", "id": "LANDGRNT"}, {"type": "numeric", "id":
+        "INSTSIZE"}, {"type": "numeric", "id": "CBSA"}, {"type": "numeric", "id":
+        "CBSATYPE"}, {"type": "numeric", "id": "CSA"}, {"type": "numeric", "id": "NECTA"},
+        {"type": "numeric", "id": "F1SYSTYP"}, {"type": "text", "id": "F1SYSNAM"},
+        {"type": "numeric", "id": "F1SYSCOD"}, {"type": "numeric", "id": "COUNTYCD"},
+        {"type": "text", "id": "COUNTYNM"}, {"type": "numeric", "id": "CNGDSTCD"},
+        {"type": "numeric", "id": "LONGITUD"}, {"type": "numeric", "id": "LATITUDE"},
+        {"type": "int8", "id": "_full_count"}, {"type": "float4", "id": "rank"}],
+        "q": "iowa", "records": [{"SECTOR": "4", "STABBR": "AR", "_full_count": "27",
+        "CHFTITLE": "Chancellor", "FAXTELE": "5018828970", "CBSATYPE": "2", "LOCALE":
+        "31", "MEDICAL": "2", "APPLURL": "https://www3.asub.edu/admissions/application.asp",
+        "CARNEGIE": "40", "OBEREG": "5", "CBSA": "42620", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.asub.edu", "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.asub.edu/finaid/", "INSTNM": "Arkansas State University-Beebe",
+        "HDEGOFR1": "40", "LONGITUD": "-91.896165", "DEGGRANT": "1", "EIN": "710421333",
+        "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "72012-1000", "GENTELE":
+        "5018823600", "ADMINURL": "www.asub.edu/admissions/", "COUNTYNM": "White County",
+        "F1SYSNAM": "Arkansas State University System", "CHFNM": "Eugene McKay", "CSA":
+        "340", "COUNTYCD": "5145", "IALIAS": "ASU-BEEBE", "F1SYSCOD": "105010", "CCBASIC":
+        "11", "FIPS": "5", "rank": 0.0573088, "UNITID": "106449", "INSTCAT": "4",
+        "OPEID": "109100", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.asub.edu/finaid/npcalc/npcalc.htm",
+        "CITY": "Beebe", "OPENPUBL": "1", "ADDR": "1000 Iowa Street", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "35.074512", "PSET4FLG": "1", "CNGDSTCD": "502", "_id": 150,
+        "CCIPUG": "1"}, {"SECTOR": "2", "STABBR": "IL", "_full_count": "27", "CHFTITLE":
+        "Interim Chancellor", "FAXTELE": "3097797748", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "https://secure.ihs.org/blank.cfm?id=15",
+        "CARNEGIE": "53", "OBEREG": "3", "CBSA": "19340", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "-2", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "2", "WEBADDR": "www.trinitycollegeqc.edu", "INSTSIZE": "1", "CYACTIVE": "1",
+        "GROFFER": "1", "HLOFFER": "7", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT":
+        "2015-01-02T00:00:00", "FAIDURL": "www.trinitycollegeqc.edu/Tuition---Aid.aspx",
+        "INSTNM": "Trinity College of Nursing & Health Sciences", "HDEGOFR1": "20",
+        "LONGITUD": "-90.570910", "DEGGRANT": "1", "EIN": "362739299", "NECTA": "-2",
+        "CCIPGRAD": "-2", "HBCU": "2", "ZIP": "61201-5317", "GENTELE": "3097797700",
+        "ADMINURL": "www.trinitycollegeqc.edu/Admissions.aspx", "COUNTYNM": "Rock
+        Island County", "F1SYSNAM": "Trinity Medical Center - Iowa Health", "CHFNM":
+        "Tracy Poelvoorde MS, RN, PhD Candidate", "CSA": "209", "COUNTYCD": "17161",
+        "IALIAS": "Trinity College|Trinity College of Nursing and Health Sciences|Trinity
+        College of Nursing", "F1SYSCOD": "201520", "CCBASIC": "26", "FIPS": "17",
+        "rank": 0.0573088, "UNITID": "146755", "INSTCAT": "3", "OPEID": "622500",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "trinitycollegeqc.edu/Tuition---Aid/Net-Price-Calculator/Calculator.aspx",
+        "CITY": "Rock Island", "OPENPUBL": "1", "ADDR": "2122 - 25th Avenue", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "2", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "-2", "LATITUDE": "41.485590", "PSET4FLG": "1", "CNGDSTCD": "1717", "_id":
+        1168, "CCIPUG": "-2"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5152445158", "CBSATYPE": "1", "LOCALE":
+        "12", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG": "4", "CBSA":
+        "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR": "www.americancollegeofhair.com",
+        "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "4", "HOSPITAL":
+        "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.admissions.americancollegeofhair.com",
+        "INSTNM": "American College of Hairstyling-Des Moines", "HDEGOFR1": "0", "LONGITUD":
+        "-93.610649", "DEGGRANT": "2", "EIN": "421069751", "NECTA": "-2", "CCIPGRAD":
+        "-3", "HBCU": "2", "ZIP": "50309", "GENTELE": "5152440971", "ADMINURL": "www.admissions.americancollegeofhair.com",
+        "COUNTYNM": "Polk County", "F1SYSNAM": "American Colleges of Hairstyling Inc.",
+        "CHFNM": "T L Millis", "CSA": "218", "COUNTYCD": "19153", "IALIAS": "Iowa
+        School of Men''s Hairstyling, Inc. dba |American College of Hairstyling -
+        Des Moines", "F1SYSCOD": "300230", "CCBASIC": "-3", "FIPS": "19", "rank":
+        0.0573088, "UNITID": "153588", "INSTCAT": "6", "OPEID": "765800", "PSEFLAG":
+        "1", "POSTSEC": "1", "NPRICURL": "americancollegeofhair.com", "CITY": "Des
+        Moines", "OPENPUBL": "1", "ADDR": "603 E Sixth St", "F1SYSTYP": "1", "TRIBAL":
+        "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE":
+        "41.592188", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id": 1373, "CCIPUG": "-3"},
+        {"SECTOR": "1", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President",
+        "FAXTELE": "5152942592", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "1",
+        "APPLURL": "www.admissions.iastate.edu/apply/", "CARNEGIE": "15", "OBEREG":
+        "4", "CBSA": "11180", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "16", "LANDGRNT":
+        "1", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.iastate.edu",
+        "INSTSIZE": "5", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "9", "HOSPITAL":
+        "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.financialaid.iastate.edu/",
+        "INSTNM": "Iowa State University", "HDEGOFR1": "11", "LONGITUD": "-93.648353",
+        "DEGGRANT": "1", "EIN": "426004224", "NECTA": "-2", "CCIPGRAD": "14", "HBCU":
+        "2", "ZIP": "50011-2030", "GENTELE": "5152945836", "ADMINURL": "www.admissions.iastate.edu/",
+        "COUNTYNM": "Story County", "F1SYSNAM": " ", "CHFNM": "Steven Leath", "CSA":
+        "218", "COUNTYCD": "19169", "IALIAS": "ISU", "F1SYSCOD": "-2", "CCBASIC":
+        "15", "FIPS": "19", "rank": 0.0573088, "UNITID": "153603", "INSTCAT": "2",
+        "OPEID": "186900", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.financialaid.iastate.edu/planning/financialcalculator.php",
+        "CITY": "Ames", "OPENPUBL": "1", "ADDR": "3410 Beardshear Hall", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "4", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "13", "LATITUDE": "42.026368", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1375, "CCIPUG": "14"}, {"SECTOR": "2", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "3193856203", "CBSATYPE": "-2", "LOCALE":
+        "33", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "32", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "7", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.iwc.edu", "INSTSIZE":
+        "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "5", "HOSPITAL": "2", "ICLEVEL":
+        "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Iowa Wesleyan
+        College", "HDEGOFR1": "30", "LONGITUD": "-91.552588", "DEGGRANT": "1", "EIN":
+        "420680332", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "52641",
+        "GENTELE": "3193858021", "ADMINURL": " ", "COUNTYNM": "Henry County", "F1SYSNAM":
+        " ", "CHFNM": "Steven E. Titus", "CSA": "-2", "COUNTYCD": "19087", "IALIAS":
+        " ", "F1SYSCOD": "-2", "CCBASIC": "22", "FIPS": "19", "rank": 0.0573088, "UNITID":
+        "153621", "INSTCAT": "2", "OPEID": "187100", "PSEFLAG": "1", "POSTSEC": "1",
+        "NPRICURL": "www.iwc.edu/NetPrice/npcalc.htm", "CITY": "Mount Pleasant", "OPENPUBL":
+        "1", "ADDR": "601 N Main Street", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF":
+        "2", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "6", "LATITUDE": "40.973689",
+        "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1376, "CCIPUG": "12"}, {"SECTOR":
+        "4", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE":
+        " ", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "2", "APPLURL": "www.iwcc.edu/future_student/",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "36540", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iwcc.edu/", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iwcc.edu/future_student/financial_aid/", "INSTNM": "Iowa Western
+        Community College", "HDEGOFR1": "40", "LONGITUD": "-95.801053", "DEGGRANT":
+        "1", "EIN": "420925013", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "51503-1057", "GENTELE": "7123253200", "ADMINURL": "www.iwcc.edu/future_student/",
+        "COUNTYNM": "Pottawattamie County", "F1SYSNAM": " ", "CHFNM": "Dr. Dan Kinney",
+        "CSA": "420", "COUNTYCD": "19155", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC":
+        "5", "FIPS": "19", "rank": 0.0573088, "UNITID": "153630", "INSTCAT": "4",
+        "OPEID": "459800", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iwcc.edu/future_student/financial_aid/npcalc.asp",
+        "CITY": "Council Bluffs", "OPENPUBL": "1", "ADDR": "2700 College Rd", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "41.274137", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1377, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "Interim President", "FAXTELE": "6414231711", "CBSATYPE": "2",
+        "LOCALE": "33", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG":
+        "4", "CBSA": "32380", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "3", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.niacc.edu",
+        "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM":
+        "North Iowa Area Community College", "HDEGOFR1": "40", "LONGITUD": "-93.131683",
+        "DEGGRANT": "1", "EIN": "420930155", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "50401", "GENTELE": "6414231264", "ADMINURL": " ", "COUNTYNM":
+        "Cerro Gordo County", "F1SYSNAM": " ", "CHFNM": "David Buettner", "CSA": "-2",
+        "COUNTYCD": "19033", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "2", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "154059", "INSTCAT": "4", "OPEID": "187700",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.niacc.edu/finaid/NetPriceCalculator.html",
+        "CITY": "Mason City", "OPENPUBL": "1", "ADDR": "500 College Dr", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.157598", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1392, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5635623719", "CBSATYPE": "-2", "LOCALE":
+        "42", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.nicc.edu", "INSTSIZE":
+        "3", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL":
+        "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Northeast
+        Iowa Community College-Calmar", "HDEGOFR1": "40", "LONGITUD": "-91.865647",
+        "DEGGRANT": "1", "EIN": "420924711", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "52132-0400", "GENTELE": "5635623263", "ADMINURL": " ", "COUNTYNM":
+        "Winneshiek County", "F1SYSNAM": " ", "CHFNM": "Doctor Liang Chee Wee", "CSA":
+        "-2", "COUNTYCD": "19191", "IALIAS": "NICC", "F1SYSCOD": "-2", "CCBASIC":
+        "2", "FIPS": "19", "rank": 0.0573088, "UNITID": "154110", "INSTCAT": "4",
+        "OPEID": "458700", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.nicc.edu/financialaid/netpricecalculator/",
+        "CITY": "Calmar", "OPENPUBL": "1", "ADDR": "1625 Hwy 150", "F1SYSTYP": "2",
+        "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.174954", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1395, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7123244136", "CBSATYPE": "-2", "LOCALE":
+        "41", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "2", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.nwicc.edu", "INSTSIZE":
+        "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL":
+        "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Northwest
+        Iowa Community College", "HDEGOFR1": "40", "LONGITUD": "-95.878781", "DEGGRANT":
+        "1", "EIN": "420926341", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "51201", "GENTELE": "7123245061", "ADMINURL": " ", "COUNTYNM": "Sioux County",
+        "F1SYSNAM": " ", "CHFNM": "Alethea Stubbe", "CSA": "-2", "COUNTYCD": "19167",
+        "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "1", "FIPS": "19", "rank": 0.0573088,
+        "UNITID": "154129", "INSTCAT": "4", "OPEID": "460000", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "www.nwicc.edu/compliance/", "CITY": "Sheldon", "OPENPUBL":
+        "1", "ADDR": "603 W Park St", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF":
+        "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "2", "LATITUDE": "43.184603",
+        "PSET4FLG": "1", "CNGDSTCD": "1904", "_id": 1396, "CCIPUG": "1"}, {"SECTOR":
+        "2", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "Chancellor", "FAXTELE":
+        "7122338017", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "2", "APPLURL":
+        " ", "CARNEGIE": "40", "OBEREG": "4", "CBSA": "43580", "NEWID": "-2", "ACT":
+        "A ", "CCSIZSET": "1", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "2", "WEBADDR": "www.stlukescollege.edu", "INSTSIZE": "1", "CYACTIVE": "1",
+        "GROFFER": "2", "HLOFFER": "5", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT":
+        "2015-01-02T00:00:00", "FAIDURL": "www.stlukescollege.edu/body.cfm?id=15",
+        "INSTNM": "St Luke''s College", "HDEGOFR1": "30", "LONGITUD": "-96.404922",
+        "DEGGRANT": "1", "EIN": "420925159", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "51104-0263", "GENTELE": "7122793149", "ADMINURL": "www.stlukescollege.edu/body.cfm?id=14",
+        "COUNTYNM": "Woodbury County", "F1SYSNAM": "Iowa Health System", "CHFNM":
+        "Michael D Stiles", "CSA": "512", "COUNTYCD": "19193", "IALIAS": " ", "F1SYSCOD":
+        "200740", "CCBASIC": "9", "FIPS": "19", "rank": 0.0573088, "UNITID": "154262",
+        "INSTCAT": "3", "OPEID": "729100", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL":
+        "www.stlukescollege.edu/body_costcalculator.cfm", "CITY": "Sioux City", "OPENPUBL":
+        "1", "ADDR": "2720 Stone Park Blvd", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF":
+        "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "3", "LATITUDE": "42.517806",
+        "PSET4FLG": "1", "CNGDSTCD": "1904", "_id": 1402, "CCIPUG": "1"}, {"SECTOR":
+        "2", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE":
+        "5634255323", "CBSATYPE": "-2", "LOCALE": "43", "MEDICAL": "2", "APPLURL":
+        "www.uiu.edu/calltoaction/apply.html", "CARNEGIE": "32", "OBEREG": "4", "CBSA":
+        "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "13", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.uiu.edu", "INSTSIZE":
+        "3", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "7", "HOSPITAL": "2", "ICLEVEL":
+        "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.uiu.edu/admissions/financialaid/index.html",
+        "INSTNM": "Upper Iowa University", "HDEGOFR1": "20", "LONGITUD": "-91.799663",
+        "DEGGRANT": "1", "EIN": "420680372", "NECTA": "-2", "CCIPGRAD": "10", "HBCU":
+        "2", "ZIP": "52142-1857", "GENTELE": "5634255200", "ADMINURL": "www.uiu.edu/admissions/index.html",
+        "COUNTYNM": "Fayette County", "F1SYSNAM": " ", "CHFNM": "William R. Duffy",
+        "CSA": "-2", "COUNTYCD": "19065", "IALIAS": "UIU", "F1SYSCOD": "-2", "CCBASIC":
+        "19", "FIPS": "19", "rank": 0.0573088, "UNITID": "154493", "INSTCAT": "2",
+        "OPEID": "189300", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "npc.collegeboard.org/student/app/uiu",
+        "CITY": "Fayette", "OPENPUBL": "1", "ADDR": "605 Washington St", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "4", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "5", "LATITUDE": "42.840293", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1411, "CCIPUG": "13"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7122746412", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "www.witcc.edu/registration/", "CARNEGIE":
+        "40", "OBEREG": "4", "CBSA": "43580", "NEWID": "-2", "ACT": "A ", "CCSIZSET":
+        "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR":
+        "www.witcc.edu", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER":
+        "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL":
+        "www.witcc.edu/financial_aid/index.cfm", "INSTNM": "Western Iowa Tech Community
+        College", "HDEGOFR1": "40", "LONGITUD": "-96.348874", "DEGGRANT": "1", "EIN":
+        "420926922", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "51102-5199",
+        "GENTELE": "7122746400", "ADMINURL": "www.witcc.edu/registration/", "COUNTYNM":
+        "Woodbury County", "F1SYSNAM": " ", "CHFNM": "Terry Murrell", "CSA": "512",
+        "COUNTYCD": "19193", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "3", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "154572", "INSTCAT": "4", "OPEID": "731600",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.witcc.edu/financial_aid/cost.cfm",
+        "CITY": "Sioux City", "OPENPUBL": "1", "ADDR": "4647 Stone Ave", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "42.482953", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1416, "CCIPUG": "1"}, {"SECTOR": "9", "STABBR": "KS", "_full_count": "27",
+        "CHFTITLE": "Co-Owner", "FAXTELE": "7857496070", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG": "4", "CBSA":
+        "29940", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR": "www.zhairacademy.com/", "INSTSIZE":
+        "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "2", "HOSPITAL": "-2", "ICLEVEL":
+        "3", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": " ", "INSTNM": "Z Hair
+        Academy", "HDEGOFR1": "0", "LONGITUD": "-95.262052", "DEGGRANT": "2", "EIN":
+        "205942606", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "66046",
+        "GENTELE": "7857491488", "ADMINURL": " ", "COUNTYNM": "Douglas County", "F1SYSNAM":
+        " ", "CHFNM": "Ron McKenzie", "CSA": "312", "COUNTYCD": "20045", "IALIAS":
+        " ", "F1SYSCOD": "-2", "CCBASIC": "-3", "FIPS": "20", "rank": 0.0573088, "UNITID":
+        "451237", "INSTCAT": "6", "OPEID": "4132900", "PSEFLAG": "1", "POSTSEC": "1",
+        "NPRICURL": "www.zhairacademy.com", "CITY": "Lawrence", "OPENPUBL": "1", "ADDR":
+        "2429 Iowa St Ste E", "F1SYSTYP": "2", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR":
+        "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "38.939914", "PSET4FLG":
+        "1", "CNGDSTCD": "2002", "_id": 6492, "CCIPUG": "-3"}, {"SECTOR": "4", "STABBR":
+        "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE": "5155767724",
+        "CBSATYPE": "2", "LOCALE": "33", "MEDICAL": "2", "APPLURL": "www.iowacentral.edu/admissions/admissions_application.asp",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "22700", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iowacentral.edu", "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iowacentral.edu/financial_aid/index.asp", "INSTNM": "Iowa
+        Central Community College", "HDEGOFR1": "40", "LONGITUD": "-94.201408", "DEGGRANT":
+        "1", "EIN": "410906391", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP":
+        "50501", "GENTELE": "5155767201", "ADMINURL": "www.iowacentral.edu/admissions/index.asp",
+        "COUNTYNM": "Webster County", "F1SYSNAM": " ", "CHFNM": "Dr. Daniel Kinney",
+        "CSA": "-2", "COUNTYCD": "19187", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC":
+        "2", "FIPS": "19", "rank": 0.0573088, "UNITID": "153524", "INSTCAT": "4",
+        "OPEID": "186500", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowacentral.edu/",
+        "CITY": "Fort Dodge", "OPENPUBL": "1", "ADDR": "One Triton Circle", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "42.489821", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1370, "CCIPUG": "1"}, {"SECTOR": "4", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7123620480", "CBSATYPE": "-2", "LOCALE":
+        "33", "MEDICAL": "2", "APPLURL": "https://www.iowalakes.edu/apply_now/index.cfm",
+        "CARNEGIE": "40", "OBEREG": "4", "CBSA": "-2", "NEWID": "-2", "ACT": "A ",
+        "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.iowalakes.edu", "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.iowalakes.edu/financial_aid/", "INSTNM": "Iowa Lakes Community
+        College", "HDEGOFR1": "40", "LONGITUD": "-94.835770", "DEGGRANT": "1", "EIN":
+        "420929936", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "51334-2295",
+        "GENTELE": "7123622601", "ADMINURL": "www.iowalakes.edu/admissions/", "COUNTYNM":
+        "Emmet County", "F1SYSNAM": " ", "CHFNM": "Valerie Newhouse", "CSA": "-2",
+        "COUNTYCD": "19063", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "2", "FIPS":
+        "19", "rank": 0.0573088, "UNITID": "153533", "INSTCAT": "4", "OPEID": "186400",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowalakes.edu/financial_aid/net_price_calculator/npcalc.htm",
+        "CITY": "Estherville", "OPENPUBL": "1", "ADDR": "19 S 7th St", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "43.401728", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1371, "CCIPUG": "1"}, {"SECTOR": "5", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President and CEO", "FAXTELE": "5152418015", "CBSATYPE": "1",
+        "LOCALE": "12", "MEDICAL": "2", "APPLURL": " ", "CARNEGIE": "-3", "OBEREG":
+        "4", "CBSA": "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.iowahealth.org/radtech",
+        "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "4", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.iowahealth.org/radtech",
+        "INSTNM": "UnityPoint Health-Des Moines School of Radiologic Technology",
+        "HDEGOFR1": "0", "LONGITUD": "-93.635129", "DEGGRANT": "2", "EIN": "420680452",
+        "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50309-1453", "GENTELE":
+        "5152416880", "ADMINURL": "www.iowahealth.org/radtech", "COUNTYNM": "Polk
+        County", "F1SYSNAM": "Iowa Health System", "CHFNM": "Eric Crowell", "CSA":
+        "218", "COUNTYCD": "19153", "IALIAS": " ", "F1SYSCOD": "200740", "CCBASIC":
+        "-3", "FIPS": "19", "rank": 0.0573088, "UNITID": "153542", "INSTCAT": "6",
+        "OPEID": "626700", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iowahealth.org/radtech",
+        "CITY": "Des Moines", "OPENPUBL": "1", "ADDR": "1200 Pleasant St", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "-3", "LATITUDE": "41.590094", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1372, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "6417524909", "CBSATYPE": "2", "LOCALE":
+        "32", "MEDICAL": "2", "APPLURL": "iowaschoolofbeauty.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "32260", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "iowaschoolofbeauty.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2",
+        "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "iowaschoolofbeauty.com", "INSTNM": "Iowa School of Beauty-Marshalltown",
+        "HDEGOFR1": "0", "LONGITUD": "-92.913104", "DEGGRANT": "2", "EIN": "421009287",
+        "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50158", "GENTELE": "6417524223",
+        "ADMINURL": "iowaschoolofbeauty.com", "COUNTYNM": "Marshall County", "F1SYSNAM":
+        "Iowa School of Beauty Inc.", "CHFNM": "Mark Oswald", "CSA": "-2", "COUNTYCD":
+        "19127", "IALIAS": " ", "F1SYSCOD": "302550", "CCBASIC": "-3", "FIPS": "19",
+        "rank": 0.070624099999999995, "UNITID": "153171", "INSTCAT": "6", "OPEID":
+        "2330900", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "iowaschoolofbeauty.com/npcalc.html",
+        "CITY": "Marshalltown", "OPENPUBL": "1", "ADDR": "112 Nicholas Dr", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "42.014681", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id":
+        1350, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "3193543335", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "tspaiowacity.com/apply_popup.html", "CARNEGIE":
+        "-3", "OBEREG": "4", "CBSA": "26980", "NEWID": "-2", "ACT": "A ", "CCSIZSET":
+        "-3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "tspaiowacity.com/", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER":
+        "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "tspaiowacity.com/consumer.html", "INSTNM": "The Salon Professional
+        Academy-Iowa City", "HDEGOFR1": "0", "LONGITUD": "-91.503041", "DEGGRANT":
+        "2", "EIN": "205752029", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP":
+        "52240-6083", "GENTELE": "319248295812", "ADMINURL": "tspaiowacity.com", "COUNTYNM":
+        "Johnson County", "F1SYSNAM": " ", "CHFNM": "Melissa MMoreland", "CSA": "168",
+        "COUNTYCD": "19103", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC": "-3", "FIPS":
+        "19", "rank": 0.070624099999999995, "UNITID": "461731", "INSTCAT": "6", "OPEID":
+        "4177800", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "tspaiowacity.com/netpricecalculator/index.htm",
+        "CITY": "Iowa City", "OPENPUBL": "1", "ADDR": "1550 South 1st Avenue", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "41.642590", "PSET4FLG": "1", "CNGDSTCD": "1902", "_id":
+        7207, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "5152780793", "CBSATYPE": "1", "LOCALE":
+        "21", "MEDICAL": "2", "APPLURL": "iowaschoolofbeauty.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "19780", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "iowaschoolofbeauty.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2",
+        "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "iowaschoolofbeauty.com", "INSTNM": "Iowa School of Beauty-Des
+        Moines", "HDEGOFR1": "0", "LONGITUD": "-93.712317", "DEGGRANT": "2", "EIN":
+        "421009287", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "50322-3203",
+        "GENTELE": "515278993912", "ADMINURL": "iowaschoolofbeauty.com", "COUNTYNM":
+        "Polk County", "F1SYSNAM": "Iowa School of Beauty Inc.", "CHFNM": "Mark Oswald",
+        "CSA": "218", "COUNTYCD": "19153", "IALIAS": " ", "F1SYSCOD": "302550", "CCBASIC":
+        "-3", "FIPS": "19", "rank": 0.070624099999999995, "UNITID": "153597", "INSTCAT":
+        "6", "OPEID": "826000", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "iowaschoolofbeauty.com/npcalc.html",
+        "CITY": "Des Moines", "OPENPUBL": "1", "ADDR": "3305 70th St", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF":
+        "-3", "LATITUDE": "41.624599", "PSET4FLG": "1", "CNGDSTCD": "1903", "_id":
+        1374, "CCIPUG": "-3"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": " ", "CBSATYPE": "1", "LOCALE": "13",
+        "MEDICAL": "2", "APPLURL": "www.lajamesinternational.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "26980", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "www.lajamesinternational.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.lajamesinternational.com", "INSTNM": "La James International
+        College-Iowa City", "HDEGOFR1": "0", "LONGITUD": "-91.532238", "DEGGRANT":
+        "2", "EIN": "421282283", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP":
+        "52245", "GENTELE": "3193383926", "ADMINURL": "www.lajamesinternational.com",
+        "COUNTYNM": "Johnson County", "F1SYSNAM": "La James International College",
+        "CHFNM": "Cynthia Becher", "CSA": "168", "COUNTYCD": "19103", "IALIAS": "
+        ", "F1SYSCOD": "302750", "CCBASIC": "-3", "FIPS": "19", "rank": 0.070624099999999995,
+        "UNITID": "154341", "INSTCAT": "6", "OPEID": "959300", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "www.lajamesinternational.com", "CITY": "Iowa City", "OPENPUBL":
+        "1", "ADDR": "227 E Market-Brewery Sq", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF":
+        "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "41.663776",
+        "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1404, "CCIPUG": "-3"}, {"SECTOR":
+        "4", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "Chancellor", "FAXTELE":
+        "5633363350", "CBSATYPE": "1", "LOCALE": "12", "MEDICAL": "2", "APPLURL":
+        "www.eicc.edu/admission/AdmissionApplication.aspx", "CARNEGIE": "40", "OBEREG":
+        "4", "CBSA": "19340", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "4", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.eicc.edu",
+        "INSTSIZE": "3", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.eicc.edu/highschool/paying/index.html",
+        "INSTNM": "Eastern Iowa Community College District", "HDEGOFR1": "40", "LONGITUD":
+        "-90.577164", "DEGGRANT": "1", "EIN": "420924364", "NECTA": "-2", "CCIPGRAD":
+        "-1", "HBCU": "2", "ZIP": "52801-1221", "GENTELE": "5633363300", "ADMINURL":
+        "www.eicc.edu/highschool/gettingin/applying/Index.html", "COUNTYNM": "Scott
+        County", "F1SYSNAM": " ", "CHFNM": "Don Doucette", "CSA": "209", "COUNTYCD":
+        "19163", "IALIAS": "Eastern Iowa Community Colleges", "F1SYSCOD": "-2", "CCBASIC":
+        "5", "FIPS": "19", "rank": 0.070624099999999995, "UNITID": "153311", "INSTCAT":
+        "4", "OPEID": "407500", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.eicc.edu/highschool/paying/netprice.html",
+        "CITY": "Davenport", "OPENPUBL": "1", "ADDR": "306 W River Dr", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "41.520280", "PSET4FLG": "1", "CNGDSTCD": "1902", "_id":
+        1358, "CCIPUG": "1"}, {"SECTOR": "6", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": "7122749740", "CBSATYPE": "1", "LOCALE":
+        "13", "MEDICAL": "2", "APPLURL": "iowaschoolofbeauty.com", "CARNEGIE": "-3",
+        "OBEREG": "4", "CBSA": "43580", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3",
+        "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR":
+        "iowaschoolofbeauty.com", "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2",
+        "HLOFFER": "4", "HOSPITAL": "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "iowaschoolofbeauty.com", "INSTNM": "Iowa School of Beauty-Sioux
+        City", "HDEGOFR1": "0", "LONGITUD": "-96.369994", "DEGGRANT": "2", "EIN":
+        "421009287", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU": "2", "ZIP": "51106",
+        "GENTELE": "7122749733", "ADMINURL": "iowaschoolofbeauty.com", "COUNTYNM":
+        "Woodbury County", "F1SYSNAM": "Iowa School of Beauty Inc.", "CHFNM": "Mark
+        Oswald", "CSA": "512", "COUNTYCD": "19193", "IALIAS": " ", "F1SYSCOD": "302550",
+        "CCBASIC": "-3", "FIPS": "19", "rank": 0.070624099999999995, "UNITID": "154457",
+        "INSTCAT": "6", "OPEID": "3441300", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL":
+        "iowaschoolofbeauty.com/npcalc.html", "CITY": "Sioux City", "OPENPUBL": "1",
+        "ADDR": "3320 Line Drive", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF": "-3",
+        "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "42.443573",
+        "PSET4FLG": "1", "CNGDSTCD": "1904", "_id": 1409, "CCIPUG": "-3"}, {"SECTOR":
+        "6", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President", "FAXTELE":
+        "6416846444", "CBSATYPE": "2", "LOCALE": "33", "MEDICAL": "2", "APPLURL":
+        "iowaschoolofbeauty.com", "CARNEGIE": "-3", "OBEREG": "4", "CBSA": "36900",
+        "NEWID": "-2", "ACT": "A ", "CCSIZSET": "-3", "LANDGRNT": "2", "UGOFFER":
+        "1", "OPEFLAG": "1", "CONTROL": "3", "WEBADDR": "iowaschoolofbeauty.com",
+        "INSTSIZE": "1", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "4", "HOSPITAL":
+        "-2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "iowaschoolofbeauty.com",
+        "INSTNM": "Iowa School of Beauty-Ottumwa", "HDEGOFR1": "0", "LONGITUD": "-92.417962",
+        "DEGGRANT": "2", "EIN": "421009287", "NECTA": "-2", "CCIPGRAD": "-3", "HBCU":
+        "2", "ZIP": "52501", "GENTELE": "6416846504", "ADMINURL": "iowaschoolofbeauty.com",
+        "COUNTYNM": "Wapello County", "F1SYSNAM": "Iowa School of Beauty Inc.", "CHFNM":
+        "Mark Oswald", "CSA": "-2", "COUNTYCD": "19179", "IALIAS": " ", "F1SYSCOD":
+        "302550", "CCBASIC": "-3", "FIPS": "19", "rank": 0.070624099999999995, "UNITID":
+        "154165", "INSTCAT": "6", "OPEID": "2306900", "PSEFLAG": "1", "POSTSEC": "1",
+        "NPRICURL": "iowaschoolofbeauty.com/npcalc.html", "CITY": "Ottumwa", "OPENPUBL":
+        "1", "ADDR": "609 W Second St", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF":
+        "-3", "DEATHYR": "-2", "RPTMTH": "2", "CCUGPROF": "-3", "LATITUDE": "41.023103",
+        "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1398, "CCIPUG": "-3"}, {"SECTOR":
+        "4", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "Chancellor", "FAXTELE":
+        "6417525909", "CBSATYPE": "2", "LOCALE": "41", "MEDICAL": "2", "APPLURL":
+        "www.iavalley.edu/mcc/admissions/index.html", "CARNEGIE": "40", "OBEREG":
+        "4", "CBSA": "32260", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "2", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.iavalley.edu/mcc/index.html",
+        "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.iavalley.edu/mcc/admissions/tuition_financial_aid/index.html",
+        "INSTNM": "Marshalltown Community College", "HDEGOFR1": "40", "LONGITUD":
+        "-92.909411", "DEGGRANT": "1", "EIN": "420926714", "NECTA": "-2", "CCIPGRAD":
+        "-1", "HBCU": "2", "ZIP": "50158", "GENTELE": "6417527106", "ADMINURL": "www.iavalley.edu/mcc/admissions/index.html",
+        "COUNTYNM": "Marshall County", "F1SYSNAM": "Iowa Valley Community College
+        District", "CHFNM": "Christopher Duree", "CSA": "-2", "COUNTYCD": "19127",
+        "IALIAS": "Iowa Valley Community College District", "F1SYSCOD": "119020",
+        "CCBASIC": "1", "FIPS": "19", "rank": 0.070624099999999995, "UNITID": "153922",
+        "INSTCAT": "4", "OPEID": "187500", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL":
+        "www.iavalley.edu/mcc/index.html", "CITY": "Marshalltown", "OPENPUBL": "1",
+        "ADDR": "3700 S Center St", "F1SYSTYP": "1", "TRIBAL": "2", "CCENRPRF": "1",
+        "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "2", "LATITUDE": "42.000650",
+        "PSET4FLG": "1", "CNGDSTCD": "1901", "_id": 1387, "CCIPUG": "1"}, {"SECTOR":
+        "4", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "Chancellor", "FAXTELE":
+        "6416483128", "CBSATYPE": "-2", "LOCALE": "33", "MEDICAL": "2", "APPLURL":
+        "www.iavalley.edu/ecc/admissions/index.html", "CARNEGIE": "40", "OBEREG":
+        "4", "CBSA": "-2", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "2", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.iavalley.edu/ecc/index.html",
+        "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER": "2", "HLOFFER": "3", "HOSPITAL":
+        "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.iavalley.edu/ecc/admissions/tuition_financial_aid/index.html",
+        "INSTNM": "Ellsworth Community College", "HDEGOFR1": "40", "LONGITUD": "-93.265853",
+        "DEGGRANT": "1", "EIN": "420926714", "NECTA": "-2", "CCIPGRAD": "-1", "HBCU":
+        "2", "ZIP": "50126", "GENTELE": "8003229235", "ADMINURL": "www.iavalley.edu/ecc/admissions/index.html",
+        "COUNTYNM": "Hardin County", "F1SYSNAM": "Iowa Valley Community College District",
+        "CHFNM": "Christopher Duree", "CSA": "-2", "COUNTYCD": "19083", "IALIAS":
+        "Iowa Valley Community College District", "F1SYSCOD": "119020", "CCBASIC":
+        "1", "FIPS": "19", "rank": 0.076422000000000004, "UNITID": "153296", "INSTCAT":
+        "4", "OPEID": "186200", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.iavalley.edu/ecc/index.html",
+        "CITY": "Iowa Falls", "OPENPUBL": "1", "ADDR": "1100 College Ave", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "3", "LATITUDE": "42.527524", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1356, "CCIPUG": "1"}, {"SECTOR": "1", "STABBR": "IA", "_full_count": "27",
+        "CHFTITLE": "President", "FAXTELE": " ", "CBSATYPE": "1", "LOCALE": "13",
+        "MEDICAL": "2", "APPLURL": "www.uni.edu/admissions/apply/documents/undergrad_app.pdf",
+        "CARNEGIE": "21", "OBEREG": "4", "CBSA": "47940", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "16", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.uni.edu", "INSTSIZE": "4", "CYACTIVE": "1", "GROFFER":
+        "1", "HLOFFER": "9", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.uni.edu/finaid/", "INSTNM": "University of Northern Iowa",
+        "HDEGOFR1": "14", "LONGITUD": "-92.459703", "DEGGRANT": "1", "EIN": "426004333",
+        "NECTA": "-2", "CCIPGRAD": "18", "HBCU": "2", "ZIP": "50614-0005", "GENTELE":
+        "3192732311", "ADMINURL": "www.uni.edu/admissions/", "COUNTYNM": "Black Hawk
+        County", "F1SYSNAM": "Board of Regents, State of Iowa", "CHFNM": "William
+        Ruud", "CSA": "-2", "COUNTYCD": "19013", "IALIAS": "UNI |Panthers |Northern
+        Iowa", "F1SYSCOD": "119010", "CCBASIC": "18", "FIPS": "19", "rank": 0.076422000000000004,
+        "UNITID": "154095", "INSTCAT": "2", "OPEID": "189000", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "access.uni.edu/cgi-bin/calc_aid/calc_aid.cgi", "CITY": "Cedar
+        Falls", "OPENPUBL": "1", "ADDR": "1227 W 27th St", "F1SYSTYP": "1", "TRIBAL":
+        "2", "CCENRPRF": "3", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "11", "LATITUDE":
+        "42.514923", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id": 1393, "CCIPUG": "13"},
+        {"SECTOR": "1", "STABBR": "IA", "_full_count": "27", "CHFTITLE": "President",
+        "FAXTELE": "3193351535", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL": "1",
+        "APPLURL": "www.uiowa.edu/admissions/undergrad/apply/fy-apply.html", "CARNEGIE":
+        "15", "OBEREG": "4", "CBSA": "26980", "NEWID": "-2", "ACT": "A ", "CCSIZSET":
+        "16", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR":
+        "www.uiowa.edu", "INSTSIZE": "5", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER":
+        "9", "HOSPITAL": "1", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL":
+        "www.uiowa.edu/financial-aid/", "INSTNM": "University of Iowa", "HDEGOFR1":
+        "11", "LONGITUD": "-91.535698", "DEGGRANT": "1", "EIN": "426004813", "NECTA":
+        "-2", "CCIPGRAD": "14", "HBCU": "2", "ZIP": "52242-1316", "GENTELE": "3193353500",
+        "ADMINURL": "admissions.uiowa.edu", "COUNTYNM": "Johnson County", "F1SYSNAM":
+        " ", "CHFNM": "Sally Mason", "CSA": "168", "COUNTYCD": "19103", "IALIAS":
+        "Iowa|UI", "F1SYSCOD": "-2", "CCBASIC": "15", "FIPS": "19", "rank": 0.076422000000000004,
+        "UNITID": "153658", "INSTCAT": "2", "OPEID": "189200", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "www.uiowa.edu/financial-aid/calculator/", "CITY": "Iowa
+        City", "OPENPUBL": "1", "ADDR": "101 Jessup Hall", "F1SYSTYP": "2", "TRIBAL":
+        "2", "CCENRPRF": "5", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "13", "LATITUDE":
+        "41.660695", "PSET4FLG": "1", "CNGDSTCD": "1902", "_id": 1378, "CCIPUG": "11"}],
+        "limit": 50, "offset": 0, "_links": {"start": "/api/3/action/datastore_search?q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=50",
+        "next": "/api/3/action/datastore_search?q=iowa&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=50&offset=50"},
+        "total": 27}}'
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 15:55:27 GMT
+- request:
+    method: get
+    uri: https://inventory.data.gov/api/3/action/datastore_search?limit=20&offset=0&q=Iowa%20State&resource_id=38625c3d-5388-4c16-a30f-d105432553a4
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 20 Apr 2016 15:55:27 GMT
+      Server:
+      - Apache
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '7409'
+      Content-Type:
+      - application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"help": "https://inventory.data.gov/api/3/action/help_show?name=datastore_search",
+        "success": true, "result": {"resource_id": "38625c3d-5388-4c16-a30f-d105432553a4",
+        "fields": [{"type": "int4", "id": "_id"}, {"type": "numeric", "id": "UNITID"},
+        {"type": "text", "id": "INSTNM"}, {"type": "text", "id": "ADDR"}, {"type":
+        "text", "id": "CITY"}, {"type": "text", "id": "STABBR"}, {"type": "text",
+        "id": "ZIP"}, {"type": "numeric", "id": "FIPS"}, {"type": "numeric", "id":
+        "OBEREG"}, {"type": "text", "id": "CHFNM"}, {"type": "text", "id": "CHFTITLE"},
+        {"type": "text", "id": "GENTELE"}, {"type": "text", "id": "FAXTELE"}, {"type":
+        "numeric", "id": "EIN"}, {"type": "numeric", "id": "OPEID"}, {"type": "numeric",
+        "id": "OPEFLAG"}, {"type": "text", "id": "WEBADDR"}, {"type": "text", "id":
+        "ADMINURL"}, {"type": "text", "id": "FAIDURL"}, {"type": "text", "id": "APPLURL"},
+        {"type": "text", "id": "NPRICURL"}, {"type": "numeric", "id": "SECTOR"}, {"type":
+        "numeric", "id": "ICLEVEL"}, {"type": "numeric", "id": "CONTROL"}, {"type":
+        "numeric", "id": "HLOFFER"}, {"type": "numeric", "id": "UGOFFER"}, {"type":
+        "numeric", "id": "GROFFER"}, {"type": "numeric", "id": "HDEGOFR1"}, {"type":
+        "numeric", "id": "DEGGRANT"}, {"type": "numeric", "id": "HBCU"}, {"type":
+        "numeric", "id": "HOSPITAL"}, {"type": "numeric", "id": "MEDICAL"}, {"type":
+        "numeric", "id": "TRIBAL"}, {"type": "numeric", "id": "LOCALE"}, {"type":
+        "numeric", "id": "OPENPUBL"}, {"type": "text", "id": "ACT"}, {"type": "numeric",
+        "id": "NEWID"}, {"type": "numeric", "id": "DEATHYR"}, {"type": "timestamp",
+        "id": "CLOSEDAT"}, {"type": "numeric", "id": "CYACTIVE"}, {"type": "numeric",
+        "id": "POSTSEC"}, {"type": "numeric", "id": "PSEFLAG"}, {"type": "numeric",
+        "id": "PSET4FLG"}, {"type": "numeric", "id": "RPTMTH"}, {"type": "text", "id":
+        "IALIAS"}, {"type": "numeric", "id": "INSTCAT"}, {"type": "numeric", "id":
+        "CCBASIC"}, {"type": "numeric", "id": "CCIPUG"}, {"type": "numeric", "id":
+        "CCIPGRAD"}, {"type": "numeric", "id": "CCUGPROF"}, {"type": "numeric", "id":
+        "CCENRPRF"}, {"type": "numeric", "id": "CCSIZSET"}, {"type": "numeric", "id":
+        "CARNEGIE"}, {"type": "numeric", "id": "LANDGRNT"}, {"type": "numeric", "id":
+        "INSTSIZE"}, {"type": "numeric", "id": "CBSA"}, {"type": "numeric", "id":
+        "CBSATYPE"}, {"type": "numeric", "id": "CSA"}, {"type": "numeric", "id": "NECTA"},
+        {"type": "numeric", "id": "F1SYSTYP"}, {"type": "text", "id": "F1SYSNAM"},
+        {"type": "numeric", "id": "F1SYSCOD"}, {"type": "numeric", "id": "COUNTYCD"},
+        {"type": "text", "id": "COUNTYNM"}, {"type": "numeric", "id": "CNGDSTCD"},
+        {"type": "numeric", "id": "LONGITUD"}, {"type": "numeric", "id": "LATITUDE"},
+        {"type": "int8", "id": "_full_count"}, {"type": "float4", "id": "rank"}],
+        "q": "Iowa State", "records": [{"SECTOR": "4", "STABBR": "AR", "_full_count":
+        "3", "CHFTITLE": "Chancellor", "FAXTELE": "5018828970", "CBSATYPE": "2", "LOCALE":
+        "31", "MEDICAL": "2", "APPLURL": "https://www3.asub.edu/admissions/application.asp",
+        "CARNEGIE": "40", "OBEREG": "5", "CBSA": "42620", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "3", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.asub.edu", "INSTSIZE": "2", "CYACTIVE": "1", "GROFFER":
+        "2", "HLOFFER": "3", "HOSPITAL": "2", "ICLEVEL": "2", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.asub.edu/finaid/", "INSTNM": "Arkansas State University-Beebe",
+        "HDEGOFR1": "40", "LONGITUD": "-91.896165", "DEGGRANT": "1", "EIN": "710421333",
+        "NECTA": "-2", "CCIPGRAD": "-1", "HBCU": "2", "ZIP": "72012-1000", "GENTELE":
+        "5018823600", "ADMINURL": "www.asub.edu/admissions/", "COUNTYNM": "White County",
+        "F1SYSNAM": "Arkansas State University System", "CHFNM": "Eugene McKay", "CSA":
+        "340", "COUNTYCD": "5145", "IALIAS": "ASU-BEEBE", "F1SYSCOD": "105010", "CCBASIC":
+        "11", "FIPS": "5", "rank": 0.083879899999999993, "UNITID": "106449", "INSTCAT":
+        "4", "OPEID": "109100", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.asub.edu/finaid/npcalc/npcalc.htm",
+        "CITY": "Beebe", "OPENPUBL": "1", "ADDR": "1000 Iowa Street", "F1SYSTYP":
+        "1", "TRIBAL": "2", "CCENRPRF": "1", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "2", "LATITUDE": "35.074512", "PSET4FLG": "1", "CNGDSTCD": "502", "_id": 150,
+        "CCIPUG": "1"}, {"SECTOR": "1", "STABBR": "IA", "_full_count": "3", "CHFTITLE":
+        "President", "FAXTELE": "5152942592", "CBSATYPE": "1", "LOCALE": "13", "MEDICAL":
+        "1", "APPLURL": "www.admissions.iastate.edu/apply/", "CARNEGIE": "15", "OBEREG":
+        "4", "CBSA": "11180", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "16", "LANDGRNT":
+        "1", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "1", "WEBADDR": "www.iastate.edu",
+        "INSTSIZE": "5", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "9", "HOSPITAL":
+        "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.financialaid.iastate.edu/",
+        "INSTNM": "Iowa State University", "HDEGOFR1": "11", "LONGITUD": "-93.648353",
+        "DEGGRANT": "1", "EIN": "426004224", "NECTA": "-2", "CCIPGRAD": "14", "HBCU":
+        "2", "ZIP": "50011-2030", "GENTELE": "5152945836", "ADMINURL": "www.admissions.iastate.edu/",
+        "COUNTYNM": "Story County", "F1SYSNAM": " ", "CHFNM": "Steven Leath", "CSA":
+        "218", "COUNTYCD": "19169", "IALIAS": "ISU", "F1SYSCOD": "-2", "CCBASIC":
+        "15", "FIPS": "19", "rank": 0.090167300000000006, "UNITID": "153603", "INSTCAT":
+        "2", "OPEID": "186900", "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "www.financialaid.iastate.edu/planning/financialcalculator.php",
+        "CITY": "Ames", "OPENPUBL": "1", "ADDR": "3410 Beardshear Hall", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "4", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "13", "LATITUDE": "42.026368", "PSET4FLG": "1", "CNGDSTCD": "1904", "_id":
+        1375, "CCIPUG": "14"}, {"SECTOR": "1", "STABBR": "IA", "_full_count": "3",
+        "CHFTITLE": "President", "FAXTELE": " ", "CBSATYPE": "1", "LOCALE": "13",
+        "MEDICAL": "2", "APPLURL": "www.uni.edu/admissions/apply/documents/undergrad_app.pdf",
+        "CARNEGIE": "21", "OBEREG": "4", "CBSA": "47940", "NEWID": "-2", "ACT": "A
+        ", "CCSIZSET": "16", "LANDGRNT": "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL":
+        "1", "WEBADDR": "www.uni.edu", "INSTSIZE": "4", "CYACTIVE": "1", "GROFFER":
+        "1", "HLOFFER": "9", "HOSPITAL": "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00",
+        "FAIDURL": "www.uni.edu/finaid/", "INSTNM": "University of Northern Iowa",
+        "HDEGOFR1": "14", "LONGITUD": "-92.459703", "DEGGRANT": "1", "EIN": "426004333",
+        "NECTA": "-2", "CCIPGRAD": "18", "HBCU": "2", "ZIP": "50614-0005", "GENTELE":
+        "3192732311", "ADMINURL": "www.uni.edu/admissions/", "COUNTYNM": "Black Hawk
+        County", "F1SYSNAM": "Board of Regents, State of Iowa", "CHFNM": "William
+        Ruud", "CSA": "-2", "COUNTYCD": "19013", "IALIAS": "UNI |Panthers |Northern
+        Iowa", "F1SYSCOD": "119010", "CCBASIC": "18", "FIPS": "19", "rank": 0.15567,
+        "UNITID": "154095", "INSTCAT": "2", "OPEID": "189000", "PSEFLAG": "1", "POSTSEC":
+        "1", "NPRICURL": "access.uni.edu/cgi-bin/calc_aid/calc_aid.cgi", "CITY": "Cedar
+        Falls", "OPENPUBL": "1", "ADDR": "1227 W 27th St", "F1SYSTYP": "1", "TRIBAL":
+        "2", "CCENRPRF": "3", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF": "11", "LATITUDE":
+        "42.514923", "PSET4FLG": "1", "CNGDSTCD": "1901", "_id": 1393, "CCIPUG": "13"}],
+        "limit": 20, "offset": 0, "_links": {"start": "/api/3/action/datastore_search?q=Iowa+State&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=20",
+        "next": "/api/3/action/datastore_search?q=Iowa+State&resource_id=38625c3d-5388-4c16-a30f-d105432553a4&limit=20&offset=20"},
+        "total": 3}}'
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 15:55:27 GMT
+recorded_with: VCR 3.0.1

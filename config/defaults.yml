@@ -1,2 +1,3 @@
 ---
 endpoint: https://inventory.data.gov/api/3
+limit: 20

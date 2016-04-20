@@ -22,7 +22,7 @@ describe DataDotGov do
   it 'can query by search param with resource' do
     resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
     client = DataDotGov::Client.new(resource)
-    VCR.use_cassette('L21') do
+    VCR.use_cassette('search__resource') do
       results = client.search('depaul')
       expect(results.size).to eq(1)
       expect(results.first.institution_name).to eq 'DePaul University'
@@ -31,9 +31,9 @@ describe DataDotGov do
 
   it 'can query by search param with resource_id' do
     client = DataDotGov::Client.new(resource_id: TEST_RESOURCE_ID)
-    VCR.use_cassette('L31') do
+    VCR.use_cassette('search__resource_id') do
       results = client.search('Child Care Provider/Assistant')
-      expect(results.size).to eq(100)
+      expect(results.size).to eq(20)
       expect(results.last.program_title).to eq 'Child Care Provider/Assistant'
       expect(results.last.award_level).to eq 'Associate\'s degree'
     end
