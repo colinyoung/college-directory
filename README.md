@@ -32,29 +32,37 @@ results.first.award_level # => 'Associate's degree'
 
 ## Search methods
 
-#### search
+#### `search`
 
 **Usage:** `search(value, offset = 0, limit = 20)`
 **Example:** `search('illinois', 0, 10)`
 **Returns:** All items containing the given word _anywhere_ in its data. You may get some VERY tangential matches! For example, if you're searching using the `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING` item and you search a state school like 'Illinois', you'll get matches that have addresses on Illinois Street, etc. Use methods below for more restrictive results.
-**Sample results for `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING`:** Objects with names of "Colorado School of Mines"†, "Carl Sandburg College", "Southwestern Illinois College", "Illinois Wesleyan University", "Hair Professionals Academy of Cosmetology", "Illinois State University", "DeVry University-Illinois", "Illinois College of Optometry", "Eastern Illinois University", "Illinois College", etc.
+**Sample results for `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING`:** Objects with names of "Colorado School of Mines"‡, "Carl Sandburg College", "Southwestern Illinois College", "Illinois Wesleyan University", "Hair Professionals Academy of Cosmetology", "Illinois State University", "DeVry University-Illinois", "Illinois College of Optometry", "Eastern Illinois University", "Illinois College", etc.
 
-† See. I told you. Colorado School of Mines is on 1500 Illinois St in Golden, CO.
+‡ See. I told you. Colorado School of Mines is on 1500 Illinois St in Golden, CO.
 
-#### contains
+#### `contains`
 
 **Usage:** `contains(value, limit = 20)`
 **Example:** `contains('pennsylvania', 50)`
 **Returns:** Up to 50 results with names containing the word 'pennsylvania' or 'Pennsylvania'. _Note: The limit is the number of results that will be returned; you are likely to get fewer than 50 results as the endpoint will often return matches that belong to the state of Pennsylvania, or in a county called Pennsylvania, or other matches outside of the title. AFAIK, there is no way to fuzzy match on a name field only._
 **Sample results for `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING`:** Objects with names of "Pennsylvania Institute of Health and Technology", "Strayer University-Pennsylvania", "Pennsylvania Institute of Taxidermy Inc", "York College Pennsylvania", "Central Pennsylvania Institute of Science and Technology", "DeVry University-Pennsylvania", etc.
 
-#### starts_with
+#### `starts_with`
 
 **Usage:** `starts_with(value, limit = 20)`
 **Example:** `starts_with('iowa', 50)`
 **Returns:** Up to 50 results with names _starting with_ the word 'iowa' or 'Iowa'. _Note: The limit is the number of results that will be returned; you are likely to get fewer than 50 results as the endpoint will often return matches that belong to the state of Iowa, or in a county called Iowa, or other matches outside of the title. Currently, there is no way to fuzzy match on a name field only._
 **Sample results for `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING`:** Objects with names of "Iowa Wesleyan College", "Iowa Western Community College", "Iowa Central Community College", "Iowa Lakes Community College", etc.
 
+#### `find` (has some caveats)
+
+**Usage:** `find(exact_name)`
+**Example:** `search('DePaul University')`
+**Returns:** An EXACT match for the term.
+**Sample results for `DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING`:** DePaul University†
+
+† _Note_: If you search 'depaul university' or 'DePaul', you will get NOTHING. This has to be exact. Another good example is Ohio State University: its official record is 'Ohio State University-Main Campus', so good luck finding that with exact name.
 
 ## Development
 
