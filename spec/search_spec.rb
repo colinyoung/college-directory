@@ -70,10 +70,10 @@ describe DataDotGov do
   end
 
   it 'can configure alternate cache stores' do
-    client = DataDotGov::Client.new(cache_store: :memcached)
+    client = DataDotGov::Client.new(cache: :memcached)
     expect(client.send(:cache_store)).to be_a ActiveSupport::Cache::MemCacheStore
 
-    client = DataDotGov::Client.new(cache_store: :file)
+    client = DataDotGov::Client.new(cache: :file)
     expect(client.send(:cache_store)).to be_a ActiveSupport::Cache::FileStore
   end
 
