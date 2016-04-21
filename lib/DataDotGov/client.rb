@@ -171,10 +171,11 @@ module DataDotGov
 
         puts "[Data.gov] Using #{cache_store_class} for caching"
 
-        case cache_store_class
-        when ActiveSupport::Cache::FileStore
+        # Require via name to avoid MemCacheStore requiring dalli early
+        case cache_store_class.name
+        when 'ActiveSupport::Cache::FileStore'
           cache_store_class.new(@options['cache_file_path'] || 'tmp/cache/data.gov-cache', options)
-        when ActiveSupport::Cache::MemCacheStore
+        when 'ActiveSupport::Cache::MemCacheStore'
           cache_store_class.new(@options['cache_servers'] || ['localhost'], options)
         else
           cache_store_class.new(options)
