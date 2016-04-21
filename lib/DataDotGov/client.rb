@@ -145,8 +145,10 @@ module DataDotGov
 
     def cache(key, value = nil)
       if value.nil?
+        puts "[Data.gov] Cache hit #{key}"
         cache_store.fetch(key)
       else
+        puts "[Data.gov] Cache miss #{key}"
         cache_store.write(key, value) # One month expiration
       end
     end
@@ -172,6 +174,8 @@ module DataDotGov
           expires_in: 2592000 # Expire all items in one month
         }
         options.merge!(@options['cache_options'] || {})
+
+        puts '[Data.gov] Using #{cache_store_class} for caching'
 
         if @options.key?('cache_servers')
           cache_store_class.new(cache_servers, options)
