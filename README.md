@@ -28,6 +28,20 @@ client = DataDotGov::Client.new(resource_id: '6d2a0324-5964-44c3-97be-061c0eb5fc
 results = client.search('Child Care Provider/Assistant')
 results.last.program_title # => 'Child Card Provider/Assistant'
 results.first.award_level # => 'Associate's degree'
+
+# configure client to cache responses for the same params consecutively in memory
+resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
+client = DataDotGov::Client.new(resource, cache: true)
+result1 = client.find('DePaul University') #=> not from cache
+result2 = client.find('DePaul University') #=> from cache
+```
+
+## Cache configuration
+
+```ruby
+resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
+client = DataDotGov::Client.new(resource, cache_options: { expires_in: 86400 })
+client = DataDotGov::Client.new(resource, cache_store: :memcache, cache_servers: ['192.168.0.1'])
 ```
 
 ## Client methods

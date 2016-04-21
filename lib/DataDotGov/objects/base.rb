@@ -41,6 +41,13 @@ module DataDotGov
         instance_variable_get("@#{name.upcase}")
       end
 
+      def eql?(other_object)
+        instance_variables.all? do |var|
+          self.get_instance_variable(var) == other_object.get_instance_variable(var)
+        end
+      end
+      alias :== :eql?
+
       private
 
       def process_value(value)

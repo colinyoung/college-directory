@@ -39,6 +39,50 @@ describe DataDotGov do
     end
   end
 
+  it 'can cache a response in-memory to search' do
+    resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
+    client = DataDotGov::Client.new(resource, cache: true)
+
+    results1 = nil
+    VCR.use_cassette('search__to_be_cached') do
+      results1 = client.search('depaul')
+    end
+    expect(results1.size).to eq(1)
+
+    results2 = nil
+    expect { results2 = client.search('depaul') }.not_to raise_error
+    expect(results2).to eq results1
+  end
+
+  it 'can cache a response in-memory to find' do
+    resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
+    client = DataDotGov::Client.new(resource, cache: true)
+
+    result1 = nil
+    VCR.use_cassette('find__to_be_cached') do
+      result1 = client.find('DePaul University')
+    end
+    expect(result1).not_to be_nil
+
+    result2 = nil
+    expect { result2 = client.find('DePaul University') }.not_to raise_error
+    expect(result2).to eq result1
+  end
+
+  it 'can configure alternate cache stores' do
+    client = DataDotGov::Client.new(cache_store: :memcached)
+    expect(client.send(:cache_store)).to be_a ActiveSupport::Cache::MemCacheStore
+
+    client = DataDotGov::Client.new(cache_store: :file)
+    expect(client.send(:cache_store)).to be_a ActiveSupport::Cache::FileStore
+  end
+
+  it 'can configure custom cache options' do
+    client = DataDotGov::Client.new(cache_options: {expires_in: 86400})
+    options = client.instance_variable_get(:@options)['cache_options']
+    expect(options).to eq(expires_in: 86400)
+  end
+
   it 'will raise errors if initialized incorrectly' do
     client = DataDotGov::Client.new
     expect { client.search('asdf') }.to raise_error(ArgumentError)

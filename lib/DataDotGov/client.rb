@@ -2,15 +2,17 @@ require 'yaml'
 require 'uri'
 require 'open-uri'
 require 'oj'
-require 'byebug'
+require 'active_support/notifications'
+require 'active_support/cache'
 
 module DataDotGov
   class Client
     DEFAULTS = YAML.load_file(File.dirname(__FILE__) + '/../../config/defaults.yml')
     SEARCH_ACTION_PATH = '/action/datastore_search'
 
-    def initialize(options = {})
-      options = stringify_hash(options)
+    def initialize(*args)
+      options = {}
+      args.each { |h| options.merge!(stringify_hash(h)) }
 
       if options.key?('link')
         options['resource_id'] = options['link'].split('/').last
@@ -113,18 +115,83 @@ module DataDotGov
     end
 
     def get_form_data(params)
+      cache_key = params.hash
+      return cache(cache_key) if cached?(cache_key)
+
       query = URI.encode_www_form(params)
       uri = URI.parse(endpoint + SEARCH_ACTION_PATH + '?' + query)
-      uri.read
+      response = uri.read
+
+      cache(cache_key, response) if cache_enabled?
+      response
     end
 
     def post_json(json)
       uri = URI.parse(endpoint + SEARCH_ACTION_PATH)
       post = Net::HTTP::Post.new(uri.path, { 'Content-Type' => 'application/json' })
-      post.body = Oj.dump(stringify_hash(json))
+      body = Oj.dump(stringify_hash(json))
+
+      cache_key = body.hash
+      return cache(cache_key) if cached?(cache_key)
+
+      post.body = body
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
-      http.request(post).body
+      response = http.request(post).body
+
+      cache(cache_key, response) if cache_enabled?
+      response
+    end
+
+    def cache(key, value = nil)
+      if value.nil?
+        cache_store.fetch(key)
+      else
+        cache_store.write(key, value) # One month expiration
+      end
+    end
+
+    def cached?(key)
+      cache_store.exist?(key)
+    end
+
+    def cache_enabled?
+      if @options.key?('cache')
+        return @options['cache']
+      elsif !@options['cache_store'].nil?
+        return true
+      elsif !@options['cache_options'].nil?
+        return true
+      end
+    end
+
+    def cache_store
+      @cache_store ||= begin
+        options = {
+          compress: true,
+          expires_in: 2592000 # Expire all items in one month
+        }
+        options.merge!(@options['cache_options'] || {})
+
+        if @options.key?('cache_servers')
+          cache_store_class.new(cache_servers, options)
+        else
+          cache_store_class.new(options)
+        end
+      end
+    end
+
+    def cache_store_class
+      case @options['cache_store']
+      when :memory
+        ActiveSupport::Cache::MemoryStore
+      when :file
+        ActiveSupport::Cache::FileStore
+      when :memcache, :memcached
+        ActiveSupport::Cache::MemCacheStore
+      else
+        ActiveSupport::Cache::MemoryStore
+      end
     end
   end
 end

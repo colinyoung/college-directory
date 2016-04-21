@@ -1,0 +1,96 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://inventory.data.gov/api/3/action/datastore_search
+    body:
+      encoding: UTF-8
+      string: '{"resource_id":"38625c3d-5388-4c16-a30f-d105432553a4","q":"","limit":1,"offset":0,"filters":{"INSTNM":["DePaul
+        University"]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 21 Apr 2016 19:23:12 GMT
+      Server:
+      - Apache
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - no-cache
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '4260'
+      Content-Type:
+      - application/json;charset=utf-8
+    body:
+      encoding: UTF-8
+      string: '{"help": "https://inventory.data.gov/api/3/action/help_show?name=datastore_search",
+        "success": true, "result": {"resource_id": "38625c3d-5388-4c16-a30f-d105432553a4",
+        "fields": [{"type": "int4", "id": "_id"}, {"type": "numeric", "id": "UNITID"},
+        {"type": "text", "id": "INSTNM"}, {"type": "text", "id": "ADDR"}, {"type":
+        "text", "id": "CITY"}, {"type": "text", "id": "STABBR"}, {"type": "text",
+        "id": "ZIP"}, {"type": "numeric", "id": "FIPS"}, {"type": "numeric", "id":
+        "OBEREG"}, {"type": "text", "id": "CHFNM"}, {"type": "text", "id": "CHFTITLE"},
+        {"type": "text", "id": "GENTELE"}, {"type": "text", "id": "FAXTELE"}, {"type":
+        "numeric", "id": "EIN"}, {"type": "numeric", "id": "OPEID"}, {"type": "numeric",
+        "id": "OPEFLAG"}, {"type": "text", "id": "WEBADDR"}, {"type": "text", "id":
+        "ADMINURL"}, {"type": "text", "id": "FAIDURL"}, {"type": "text", "id": "APPLURL"},
+        {"type": "text", "id": "NPRICURL"}, {"type": "numeric", "id": "SECTOR"}, {"type":
+        "numeric", "id": "ICLEVEL"}, {"type": "numeric", "id": "CONTROL"}, {"type":
+        "numeric", "id": "HLOFFER"}, {"type": "numeric", "id": "UGOFFER"}, {"type":
+        "numeric", "id": "GROFFER"}, {"type": "numeric", "id": "HDEGOFR1"}, {"type":
+        "numeric", "id": "DEGGRANT"}, {"type": "numeric", "id": "HBCU"}, {"type":
+        "numeric", "id": "HOSPITAL"}, {"type": "numeric", "id": "MEDICAL"}, {"type":
+        "numeric", "id": "TRIBAL"}, {"type": "numeric", "id": "LOCALE"}, {"type":
+        "numeric", "id": "OPENPUBL"}, {"type": "text", "id": "ACT"}, {"type": "numeric",
+        "id": "NEWID"}, {"type": "numeric", "id": "DEATHYR"}, {"type": "timestamp",
+        "id": "CLOSEDAT"}, {"type": "numeric", "id": "CYACTIVE"}, {"type": "numeric",
+        "id": "POSTSEC"}, {"type": "numeric", "id": "PSEFLAG"}, {"type": "numeric",
+        "id": "PSET4FLG"}, {"type": "numeric", "id": "RPTMTH"}, {"type": "text", "id":
+        "IALIAS"}, {"type": "numeric", "id": "INSTCAT"}, {"type": "numeric", "id":
+        "CCBASIC"}, {"type": "numeric", "id": "CCIPUG"}, {"type": "numeric", "id":
+        "CCIPGRAD"}, {"type": "numeric", "id": "CCUGPROF"}, {"type": "numeric", "id":
+        "CCENRPRF"}, {"type": "numeric", "id": "CCSIZSET"}, {"type": "numeric", "id":
+        "CARNEGIE"}, {"type": "numeric", "id": "LANDGRNT"}, {"type": "numeric", "id":
+        "INSTSIZE"}, {"type": "numeric", "id": "CBSA"}, {"type": "numeric", "id":
+        "CBSATYPE"}, {"type": "numeric", "id": "CSA"}, {"type": "numeric", "id": "NECTA"},
+        {"type": "numeric", "id": "F1SYSTYP"}, {"type": "text", "id": "F1SYSNAM"},
+        {"type": "numeric", "id": "F1SYSCOD"}, {"type": "numeric", "id": "COUNTYCD"},
+        {"type": "text", "id": "COUNTYNM"}, {"type": "numeric", "id": "CNGDSTCD"},
+        {"type": "numeric", "id": "LONGITUD"}, {"type": "numeric", "id": "LATITUDE"}],
+        "q": "", "records": [{"SECTOR": "2", "STABBR": "IL", "CHFTITLE": "President",
+        "FAXTELE": " ", "CBSATYPE": "1", "LOCALE": "11", "MEDICAL": "2", "APPLURL":
+        "https://wa.is.depaul.edu/AdmissionApp/login.aspx", "CARNEGIE": "16", "OBEREG":
+        "3", "CBSA": "16980", "NEWID": "-2", "ACT": "A ", "CCSIZSET": "15", "LANDGRNT":
+        "2", "UGOFFER": "1", "OPEFLAG": "1", "CONTROL": "2", "WEBADDR": "www.depaul.edu",
+        "INSTSIZE": "5", "CYACTIVE": "1", "GROFFER": "1", "HLOFFER": "9", "HOSPITAL":
+        "2", "ICLEVEL": "1", "CLOSEDAT": "2015-01-02T00:00:00", "FAIDURL": "www.depaul.edu/admission/FinancialAid/",
+        "INSTNM": "DePaul University", "HDEGOFR1": "11", "LONGITUD": "-87.654116",
+        "DEGGRANT": "1", "EIN": "362167048", "NECTA": "-2", "CCIPGRAD": "15", "HBCU":
+        "2", "ZIP": "60604", "GENTELE": "3123628000", "ADMINURL": "depaul.edu/admission/types_of_admission/index.asp",
+        "COUNTYNM": "Cook County", "F1SYSNAM": " ", "CHFNM": "Dennis H. Holtschneider",
+        "CSA": "176", "COUNTYCD": "17031", "IALIAS": " ", "F1SYSCOD": "-2", "CCBASIC":
+        "17", "FIPS": "17", "UNITID": "144740", "INSTCAT": "2", "OPEID": "167100",
+        "PSEFLAG": "1", "POSTSEC": "1", "NPRICURL": "depaul.studentaidcalculator.com/survey.aspx",
+        "CITY": "Chicago", "OPENPUBL": "1", "ADDR": "1 E Jackson Blvd", "F1SYSTYP":
+        "2", "TRIBAL": "2", "CCENRPRF": "5", "DEATHYR": "-2", "RPTMTH": "1", "CCUGPROF":
+        "11", "LATITUDE": "41.923332", "PSET4FLG": "1", "CNGDSTCD": "1705", "_id":
+        1104, "CCIPUG": "11"}], "limit": 1, "filters": {"INSTNM": ["DePaul University"]},
+        "offset": 0, "_links": {"start": "/api/3/action/datastore_search", "next":
+        "/api/3/action/datastore_search?offset=1"}, "total": 1}}'
+    http_version: 
+  recorded_at: Thu, 21 Apr 2016 19:23:12 GMT
+recorded_with: VCR 3.0.1
