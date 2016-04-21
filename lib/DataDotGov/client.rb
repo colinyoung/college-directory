@@ -116,7 +116,7 @@ module DataDotGov
 
     def get_form_data(params)
       cache_key = params.hash
-      return cache(cache_key) if cached?(cache_key)
+      return fetch(cache_key) if cached?(cache_key)
 
       query = URI.encode_www_form(params)
       uri = URI.parse(endpoint + SEARCH_ACTION_PATH + '?' + query)
@@ -132,7 +132,7 @@ module DataDotGov
       body = Oj.dump(stringify_hash(json))
 
       cache_key = body.hash
-      return cache(cache_key) if cached?(cache_key)
+      return fetch(cache_key) if cached?(cache_key)
 
       post.body = body
       http = Net::HTTP.new(uri.host, uri.port)
@@ -143,14 +143,14 @@ module DataDotGov
       response
     end
 
-    def cache(key, value = nil)
-      if value.nil?
-        puts "[Data.gov] Cache hit #{key}"
-        cache_store.fetch(key)
-      else
-        puts "[Data.gov] Cache miss #{key}"
-        cache_store.write(key, value) # One month expiration
-      end
+    def fetch(key)
+      puts "[Data.gov] Cache hit #{key}"
+      cache_store.fetch(key)
+    end
+
+    def cache(key, value)
+      puts "[Data.gov] Cache miss #{key}, writing to cache"
+      cache_store.write(key, value) # One month expiration
     end
 
     def cached?(key)
@@ -175,7 +175,7 @@ module DataDotGov
         }
         options.merge!(@options['cache_options'] || {})
 
-        puts '[Data.gov] Using #{cache_store_class} for caching'
+        puts "[Data.gov] Using #{cache_store_class} for caching"
 
         if @options.key?('cache_servers')
           cache_store_class.new(cache_servers, options)
