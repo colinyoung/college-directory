@@ -40,8 +40,10 @@ result2 = client.find('DePaul University') #=> from cache
 
 ```ruby
 resource = DataDotGov::Resources::Ed::PostSecondary::DIRECTORY_LISTING
-client = DataDotGov::Client.new(resource, cache_options: { expires_in: 86400 })
-client = DataDotGov::Client.new(resource, cache_store: :memcache, cache_servers: ['192.168.0.1'])
+client = DataDotGov::Client.new(resource, cache_options: { expires_in: 86400 }) # Default cache is MemoryStore (which is a bad idea for Rails apps!)
+# Other options:
+client = DataDotGov::Client.new(resource, cache: :memcache, cache_servers: ['192.168.0.1'])
+client = DataDotGov::Client.new(resource, cache: :file, cache_file_path: 'tmp/cache/data.gov-cache')
 ```
 
 ## Client methods

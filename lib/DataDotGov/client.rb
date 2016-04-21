@@ -158,13 +158,7 @@ module DataDotGov
     end
 
     def cache_enabled?
-      if @options.key?('cache')
-        return @options['cache']
-      elsif !@options['cache_store'].nil?
-        return true
-      elsif !@options['cache_options'].nil?
-        return true
-      end
+      @options.key?('cache') && @options['cache'] != false
     end
 
     def cache_store
@@ -177,8 +171,11 @@ module DataDotGov
 
         puts "[Data.gov] Using #{cache_store_class} for caching"
 
-        if @options.key?('cache_servers')
-          cache_store_class.new(cache_servers, options)
+        case cache_store_class
+        when ActiveSupport::Cache::FileStore
+          cache_store_class.new(@options['cache_file_path'] || 'tmp/cache/data.gov-cache', options)
+        when ActiveSupport::Cache::MemCacheStore
+          cache_store_class.new(@options['cache_servers'] || ['localhost'], options)
         else
           cache_store_class.new(options)
         end
@@ -186,7 +183,7 @@ module DataDotGov
     end
 
     def cache_store_class
-      case @options['cache_store']
+      case @options['cache']
       when :memory
         ActiveSupport::Cache::MemoryStore
       when :file
