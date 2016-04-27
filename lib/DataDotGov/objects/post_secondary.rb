@@ -1,3 +1,5 @@
+require 'DataDotGov/objects/base'
+
 module DataDotGov
   module Objects
     class PostSecondary < Base
