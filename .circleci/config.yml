@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.0.0
+    steps:
+      - checkout
 workflows:
   version: 2
   build_project:
